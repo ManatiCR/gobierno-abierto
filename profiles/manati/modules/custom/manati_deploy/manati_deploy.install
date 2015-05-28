@@ -12,10 +12,29 @@ function manati_deploy_install() {
   // Do your custom stuff here.
 }
 
-/**
- * Explain what is this hook about.
- */
 function manati_deploy_update_7000() {
-  // Do your custom stuff here.
-  // Remember to update number in function name.
+  // Nothing to see.
+}
+
+/**
+ * Enable base modules and disable unused modules.
+ */
+function manati_deploy_update_7001() {
+
+  $modules_disable_list = array(
+    'color',
+    'ds',
+    'rules'
+  );
+  $modules_enable_list = array(
+    'admin_menu_toolbar',
+    'context_ui',
+    'date_popup',
+    'magic',
+    'views_ui'
+  );
+
+  module_disable($modules_disable_list);
+  drupal_uninstall_modules($modules_disable_list, TRUE);
+  module_enable($modules_enable_list);
 }
