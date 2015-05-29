@@ -1,0 +1,8 @@
+name = YSGA Base Fields
+description = Base Fields used in multiple Content Types
+core = 7.x
+package = YSGA Content Types
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body

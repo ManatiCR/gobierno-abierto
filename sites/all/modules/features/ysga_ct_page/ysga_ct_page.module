@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Page feature.
+ */
+
+include_once 'ysga_ct_page.features.inc';

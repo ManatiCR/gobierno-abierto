@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Base Config feature.
+ */
+
+include_once 'ysga_base_config.features.inc';
