@@ -53,3 +53,10 @@ function manati_deploy_update_7002() {
 
   module_enable($modules_list);
 }
+
+/**
+ * Enable Special Menu Items module
+ */
+function manati_deploy_update_7003() {
+  module_enable(array('special_menu_items'));
+}
