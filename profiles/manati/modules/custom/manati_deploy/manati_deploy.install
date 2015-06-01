@@ -31,7 +31,8 @@ function manati_deploy_update_7001() {
     'context_ui',
     'date_popup',
     'magic',
-    'views_ui'
+    'views_ui',
+    'contact'
   );
 
   module_disable($modules_disable_list);
