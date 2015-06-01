@@ -1,0 +1,30 @@
+<?php
+
+/* 
+ * Implements hook_install()
+ *
+ */
+function ysga_tax_categorias_noticias_install() {
+  $vocabulary = taxonomy_vocabulary_machine_name_load('categorias_noticias');
+  if ($vocabulary) {
+    taxonomy_term_save((object) array(
+      'name' => 'General',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Mesas de Trabajo',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Proceso',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Propuestas',
+      'vid' => $vocabulary->vid
+    ));
+    watchdog('ysga_tax_categorias_noticias', 'Taxonomy terms created', array(), WATCHDOG_DEBUG);
+  } else {
+    watchdog('ysga_tax_categorias_noticias', 'Vocabulary not found', array(), WATCHDOG_DEBUG);
+  }
+}
