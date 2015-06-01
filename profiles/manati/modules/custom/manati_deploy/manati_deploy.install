@@ -38,3 +38,18 @@ function manati_deploy_update_7001() {
   drupal_uninstall_modules($modules_disable_list, TRUE);
   module_enable($modules_enable_list);
 }
+
+/**
+ * Enable base features
+ */
+function manati_deploy_update_7002() {
+  $modules_list = array(
+    'ysga_base_config',
+    'ysga_base_fields',
+    'ysga_tax_categorias_noticias',
+    'ysga_ct_page',
+    'ysga_ct_noticia'
+  );
+
+  module_enable($modules_list);
+}
