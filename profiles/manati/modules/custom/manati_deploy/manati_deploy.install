@@ -61,3 +61,68 @@ function manati_deploy_update_7002() {
 function manati_deploy_update_7003() {
   module_enable(array('special_menu_items'));
 }
+
+/**
+ * Enable new features and create taxonomy terms
+ */
+function manati_deploy_update_7004() {
+  $modules_list = array(
+    'ysga_tax_categorias_propuestas',
+    'ysga_tax_regiones',
+    'ysga_ct_consulta',
+    'ysga_ct_propuesta'
+  );
+
+  module_enable($modules_list);
+
+  // Create taxonomy terms
+
+  // Regiones
+  $vocabulary = taxonomy_vocabulary_machine_name_load('regiones');
+
+  if ($vocabulary) {
+    taxonomy_term_save((object) array(
+      'name' => 'Región Central',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Región Chorotega',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Región Pacífico Central',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Región Brunca',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Región Huetar Atlántica',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Región Huetar Norte',
+      'vid' => $vocabulary->vid
+    ));
+  }
+
+  // Categorías para las propuestas
+  $vocabulary = taxonomy_vocabulary_machine_name_load('categorias_propuestas');
+
+  if ($vocabulary) {
+    taxonomy_term_save((object) array(
+      'name' => 'Transparencia',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Lucha contra la corrupción',
+      'vid' => $vocabulary->vid
+    ));
+    taxonomy_term_save((object) array(
+      'name' => 'Participación ciudadana',
+      'vid' => $vocabulary->vid
+    ));
+  }
+
+}

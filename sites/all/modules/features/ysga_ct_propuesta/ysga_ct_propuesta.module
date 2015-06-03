@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Propuesta feature.
+ */
+
+include_once 'ysga_ct_propuesta.features.inc';

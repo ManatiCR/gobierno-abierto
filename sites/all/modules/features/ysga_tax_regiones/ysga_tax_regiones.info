@@ -1,0 +1,8 @@
+name = Regiones socioeconómicas
+description = 'Regiones' Vocabulary
+core = 7.x
+package = YSGA Taxonomies
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = regiones
