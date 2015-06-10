@@ -124,5 +124,11 @@ function manati_deploy_update_7004() {
       'vid' => $vocabulary->vid
     ));
   }
+}
 
+/**
+ * Sets default theme
+ */
+function manati_deploy_update_7005() {
+  variable_set('theme_default', 'ysga');
 }
