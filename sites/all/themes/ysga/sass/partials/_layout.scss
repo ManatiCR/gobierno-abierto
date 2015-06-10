@@ -1,0 +1,16 @@
+//
+// General layout rules
+//
+
+.header-content {
+  margin: 10px;
+  @include media($mobile) {
+    height: 120px;
+    margin: 0;
+    @include outer-container;
+  }
+}
+
+.footer-content {
+  @include outer-container;
+}

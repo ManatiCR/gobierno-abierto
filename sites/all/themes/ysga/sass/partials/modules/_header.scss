@@ -1,0 +1,28 @@
+// Header styles
+
+.site-logo, .site-slogan {
+  display: block;
+  @include media($mobile) {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.site-logo {
+  @include media($mobile) {
+    margin-top: 26px;
+  }
+}
+
+.site-slogan {
+  margin-top: 10px;
+  @include font-size(12);
+  @include media($mobile) {
+    margin: 26px 0 0 30px;
+    padding-left: 30px;
+    height: 68px;
+    border-left: 1px solid $background-color;
+    max-width: 350px;
+    padding-top: 15px;
+  }
+}

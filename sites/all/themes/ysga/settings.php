@@ -1,0 +1,24 @@
+$conf['magic']['accese']['toggle_logo'] = 1;
+$conf['magic']['accese']['toggle_name'] = 0;
+$conf['magic']['accese']['toggle_slogan'] = 0;
+$conf['magic']['accese']['toggle_node_user_picture'] = 1;
+$conf['magic']['accese']['toggle_comment_user_picture'] = 1;
+$conf['magic']['accese']['toggle_comment_user_verification'] = 1;
+$conf['magic']['accese']['toggle_favicon'] = 1;
+$conf['magic']['accese']['toggle_main_menu'] = 0;
+$conf['magic']['accese']['toggle_secondary_menu'] = 0;
+$conf['magic']['accese']['default_logo'] = 1;
+$conf['magic']['accese']['logo_path'] = '';
+$conf['magic']['accese']['logo_upload'] = '';
+$conf['magic']['accese']['default_favicon'] = 1;
+$conf['magic']['accese']['favicon_path'] = '';
+$conf['magic']['accese']['favicon_upload'] = '';
+$conf['magic']['accese']['html5shim'] = 0;
+$conf['magic']['accese']['respond_js'] = 0;
+$conf['magic']['accese']['normalize_css'] = 0;
+$conf['magic']['accese']['magic_css_excludes'] = 'system/*.css
+views/*.css';
+$conf['magic']['accese']['magic_footer_js'] = 0;
+$conf['magic']['accese']['magic_library_head'] = 0;
+$conf['magic']['accese']['magic_experimental_js'] = 0;
+$conf['magic']['accese']['magic_js_excludes'] = '';

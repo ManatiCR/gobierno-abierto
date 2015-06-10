@@ -44,3 +44,6 @@ Thumbs.db
 
 # Local settings file.
 /sites/default/settings.local.inc
+
+# Node modules
+node_modules

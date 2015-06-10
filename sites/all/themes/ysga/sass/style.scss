@@ -1,0 +1,27 @@
+/*
+ * Estilos para sitio web YSGA
+ * Desarrollado por Estudio Manatí (http://estudiomanati.com)
+ *
+ */
+
+// Bibliotecas
+@import "bourbon";
+@import "neat";
+
+// Google fonts
+// Dosis - Titles
+@import url(http://fonts.googleapis.com/css?family=Dosis:700);
+// Lato - Subtitles
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,700italic,900italic);
+// Noto - Copy
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+
+// Parciales
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/placeholders";
+@import "partials/base";
+@import "partials/layout";
+
+@import "partials/modules/header";
