@@ -14,3 +14,8 @@
 .footer-content {
   @include outer-container;
 }
+
+.main-content {
+  margin: 40px 0;
+  @include outer-container;
+}

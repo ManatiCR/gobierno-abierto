@@ -52,6 +52,12 @@
   </div><!-- /header-content -->
 </header>
 
+  <?php if ($page['navigation']): ?>
+  <nav class="nav nav-main">
+    <?php print render($page['navigation']); ?>
+  </nav>
+  <?php endif; ?>
+
 <?php if ($page['above_content']): ?>
   <section class="above-content">
     <?php print render($page['above_content']); ?>
@@ -105,9 +111,10 @@
 
 <footer class="footer" role="contentinfo">
   <div class="footer-content">
-    <div class="footer">
-      <?php print render($page['footer']); ?>
-    </div>
+    <nav class="nav nav-main">
+      <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
+    </nav>
+    <?php print render($page['footer']); ?>
   </div>
 </footer>
 

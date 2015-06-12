@@ -13,7 +13,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.element-invisible {
+.element-invisible, .nav-main h2 {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
@@ -109,6 +109,16 @@ th, td {
     content: "";
     display: table; }
 
+.main-content {
+  margin: 40px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .main-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .site-logo, .site-slogan {
   display: block; }
   @media screen and (min-width: 480px) {
@@ -132,5 +142,72 @@ th, td {
       border-left: 1px solid #ddd;
       max-width: 350px;
       padding-top: 15px; } }
+
+.footer {
+  background-color: #2f2935;
+  padding: 20px 0; }
+
+.nav .content ul {
+  margin: 0;
+  padding: 0; }
+.nav .content li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative; }
+  .nav .content li .menu {
+    position: absolute;
+    width: 250px; }
+    .nav .content li .menu li {
+      display: block; }
+
+.nav-main {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .nav-main::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nav-main .content li {
+    text-transform: uppercase; }
+    .nav-main .content li:first-child a {
+      padding-left: 0; }
+    .nav-main .content li .menu {
+      display: none;
+      border: 1px solid #ddd;
+      border-top-color: #fff;
+      background-color: #fff; }
+      .nav-main .content li .menu li a {
+        padding: 10px; }
+        .nav-main .content li .menu li a:hover {
+          background-color: #c6e9f7; }
+    .nav-main .content li:hover .menu {
+      display: block; }
+  .nav-main .content a {
+    display: block;
+    padding: 10px;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #5d5d5d; }
+    .nav-main .content a.active {
+      color: #29abe2;
+      font-weight: 700; }
+
+.footer .nav-main {
+  border: none; }
+  .footer .nav-main li {
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 10px; }
+  .footer .nav-main a {
+    font-family: Lato, sans-serif;
+    color: #5d5d5d;
+    font-size: 12px;
+    font-size: 1.2rem; }
+    .footer .nav-main a.active {
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

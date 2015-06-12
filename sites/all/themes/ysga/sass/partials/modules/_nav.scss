@@ -1,0 +1,22 @@
+//
+// General navigation styles
+//
+
+.nav .content {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    .menu {
+      position: absolute;
+      width: 250px;
+      li {
+        display: block;
+      }
+    }
+  }
+}

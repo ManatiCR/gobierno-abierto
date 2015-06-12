@@ -13,8 +13,8 @@ features[] = slogan
 features[] = node_user_picture
 features[] = comment_user_picture
 features[] = comment_user_verification
-;features[] = main_menu
-;features[] = secondary_menu
+features[] = main_menu
+features[] = secondary_menu
 
 ;-------------- R E G I O N S -------------
 
@@ -58,8 +58,9 @@ settings[html5shim] = 0
 settings[respond_js] = 0
 settings[normalize_css] = 0
 settings[jquery_update_jquery_version] = 
-settings[magic_css_excludes] = :core
+settings[magic_css_excludes] = system/system.menus.css
 settings[magic_footer_js] = 1
 settings[magic_library_head] = 0
 settings[magic_experimental_js] = 0
 settings[magic_js_excludes] = 
+
