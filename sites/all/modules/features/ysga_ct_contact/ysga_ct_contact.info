@@ -8,4 +8,5 @@ dependencies[] = fe_block
 features[context][] = contacto
 features[ctools][] = context:context:3
 features[fe_block_boxes][] = ysga_comoayudar
+features[fe_block_settings][] = block-ysga_comoayudar
 features[features_api][] = api:2
