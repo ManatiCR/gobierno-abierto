@@ -1,0 +1,11 @@
+name = YSGA Contact Context
+core = 7.x
+package = YSGA Contexts
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = fe_block
+features[context][] = contacto
+features[ctools][] = context:context:3
+features[fe_block_boxes][] = ysga_comoayudar
+features[features_api][] = api:2

@@ -1,0 +1,9 @@
+name = YSGA Sitewide Header Blocks context
+description = YSGA Sitewide Header Blocks context
+core = 7.x
+package = YSGA Contexts
+dependencies[] = context
+dependencies[] = ctools
+features[context][] = ysga-sitewide-header
+features[ctools][] = context:context:3
+features[features_api][] = api:2

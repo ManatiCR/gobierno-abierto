@@ -132,3 +132,17 @@ function manati_deploy_update_7004() {
 function manati_deploy_update_7005() {
   variable_set('theme_default', 'ysga');
 }
+
+/**
+ * Enable modules and features
+ */
+function manati_deploy_update_7006() {
+  $module_list = array(
+    'block_class',
+    'fe_block',
+    'ysga_ct_header_blocks',
+    'ysga_ct_contact'
+  );
+
+  module_enable($module_list);
+}

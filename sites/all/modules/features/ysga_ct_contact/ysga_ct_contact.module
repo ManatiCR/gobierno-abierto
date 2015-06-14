@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Contact Context feature.
+ */
+
+include_once 'ysga_ct_contact.features.inc';

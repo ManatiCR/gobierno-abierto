@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Sitewide Header Blocks context feature.
+ */
+
+include_once 'ysga_ct_header_blocks.features.inc';
