@@ -142,3 +142,11 @@ function ysga_preprocess_block(&$vars, $hook) {
   // Add a striping class.
   $vars['classes_array'][] = 'block-' . $vars['zebra'];
 }
+
+/**
+ * Ensure Text areas are never ever resizeable EVER!
+ */
+function ysga_textarea($element) {
+  $element['element']['#resizable'] = FALSE;
+  return theme_textarea($element) ;
+}

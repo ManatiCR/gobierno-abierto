@@ -1,0 +1,22 @@
+//
+// Estilos para bloques
+//
+
+.block-sidebar {}
+
+.block-sidebar--como-ayudar {
+  background-color: $subtitle-color;
+  text-align: center;
+  padding: 50px 0;
+  a {
+    color: $highlight2-color;
+    font-family: $title-font;
+    text-transform: uppercase;
+    @include font-size(22);
+    &:after {
+      content: ">";
+      margin-left: 5px;
+      @include font-size(30);
+    }
+  }
+}

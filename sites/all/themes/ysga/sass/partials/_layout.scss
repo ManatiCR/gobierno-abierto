@@ -19,3 +19,19 @@
   margin: 40px 0;
   @include outer-container;
 }
+
+.no-sidebars .main {
+  width: 100%;
+}
+
+.one-sidebar .main {
+  @include media($mobile) {
+    @include span-columns(8);
+  }
+}
+
+#sidebar-first {
+  @include media($mobile) {
+    @include span-columns(5);
+  }
+}

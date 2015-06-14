@@ -53,9 +53,9 @@
 </header>
 
   <?php if ($page['navigation']): ?>
-  <nav class="nav nav-main">
+  <div class="nav nav-main">
     <?php print render($page['navigation']); ?>
-  </nav>
+  </div>
   <?php endif; ?>
 
 <?php if ($page['above_content']): ?>
@@ -96,10 +96,10 @@
 
     </div>
 
-  <?php if ($page['sidebar']): ?>
-    <div id="sidebar" class="sidebar">
-      <?php print render($page['sidebar']); ?>
-    </div> <!-- /.section, /#sidebar -->
+  <?php if ($page['sidebar_first']): ?>
+    <div id="sidebar-first" class="sidebar sidebar-first">
+      <?php print render($page['sidebar_first']); ?>
+    </div> <!-- /.section, /#sidebar-first -->
   <?php endif; ?>
 </div>
 
