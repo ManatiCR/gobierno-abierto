@@ -19,6 +19,15 @@ html {
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
+.block-sidebar h2, .page-contact .title {
+  font-family: Dosis, sans-serif;
+  color: #f7931e;
+  font-size: 22px;
+  font-size: 2.2rem;
+  border-bottom: 2px solid #f7931e;
+  text-transform: uppercase;
+  padding-bottom: 3px; }
+
 /*
  * Rules for base elements
  */
@@ -181,6 +190,18 @@ th, td {
     .nav .content li .menu li {
       display: block; }
 
+.block-sidebar--menu-acerca ul {
+  margin: 0;
+  padding: 0; }
+.block-sidebar--menu-acerca li {
+  list-style-type: none;
+  font-weight: 700;
+  margin: 0 0 0.5em 0; }
+.block-sidebar--menu-acerca a {
+  color: #2f2935; }
+  .block-sidebar--menu-acerca a.active {
+    color: #20ceac; }
+
 .nav-main {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -234,7 +255,11 @@ th, td {
 .block-sidebar--como-ayudar {
   background-color: #2f2935;
   text-align: center;
-  padding: 50px 0; }
+  padding: 60px 0; }
+  .block-sidebar--como-ayudar h2 {
+    border-bottom: none;
+    padding: 0;
+    margin: 0; }
   .block-sidebar--como-ayudar a {
     color: #29abe2;
     font-family: Dosis, sans-serif;
@@ -247,14 +272,6 @@ th, td {
       font-size: 30px;
       font-size: 3rem; }
 
-.page-contact .title {
-  font-family: Dosis, sans-serif;
-  color: #f7931e;
-  font-size: 22px;
-  font-size: 2.2rem;
-  border-bottom: 2px solid #f7931e;
-  text-transform: uppercase;
-  padding-bottom: 3px; }
 @media screen and (min-width: 480px) {
   .page-contact .main {
     padding-right: 6%; } }

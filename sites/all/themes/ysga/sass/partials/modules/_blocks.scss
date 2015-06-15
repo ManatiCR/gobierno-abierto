@@ -2,12 +2,21 @@
 // Estilos para bloques
 //
 
-.block-sidebar {}
+.block-sidebar {
+  h2 {
+    @extend %title;
+  }
+}
 
 .block-sidebar--como-ayudar {
   background-color: $subtitle-color;
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0;
+  h2 {
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+  }
   a {
     color: $highlight2-color;
     font-family: $title-font;

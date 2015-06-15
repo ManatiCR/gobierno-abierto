@@ -20,3 +20,23 @@
     }
   }
 }
+
+// Submenú "Acerca"
+
+.block-sidebar--menu-acerca {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+  }
+  a {
+    color: $subtitle-color;
+    &.active {
+      color: $highlight1-color;
+    }
+  }
+}

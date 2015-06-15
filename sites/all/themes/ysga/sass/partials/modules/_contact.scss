@@ -4,12 +4,7 @@
 
 .page-contact {
   .title {
-    font-family: $title-font;
-    color: $title-color;
-    @include font-size(22);
-    border-bottom: 2px solid $title-color;
-    text-transform: uppercase;
-    padding-bottom: 3px;
+    @extend %title;
   }
   .main {
     @include media($mobile) {
