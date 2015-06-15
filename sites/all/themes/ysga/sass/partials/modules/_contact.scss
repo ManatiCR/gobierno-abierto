@@ -29,10 +29,10 @@
   .form-type-textfield, .form-type-textarea {
     overflow: hidden;
     label {
-      @include span-columns(1 of 8);
+      @include span-columns(2 of 8);
     }
     input, textarea {
-      @include span-columns(7 of 8);
+      @include span-columns(6 of 8);
     } 
   }
   .form-actions {
