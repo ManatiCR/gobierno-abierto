@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA "Acerca" section Context feature.
+ */
+
+include_once 'ysga_ct_acerca.features.inc';

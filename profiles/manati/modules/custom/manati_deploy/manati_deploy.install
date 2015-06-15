@@ -146,3 +146,10 @@ function manati_deploy_update_7006() {
 
   module_enable($module_list);
 }
+
+/**
+ * Enable "Acerca" section context feature
+ */
+function manati_deploy_update_7007() {
+  module_enable(array('ysga_ct_acerca'));
+}
