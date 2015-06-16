@@ -6,11 +6,6 @@
   .title {
     @extend %title;
   }
-  .main {
-    @include media($mobile) {
-      padding-right: 6%;
-    }
-  }
   label {
     color: $subtitle-color;
     @include font-size(12);

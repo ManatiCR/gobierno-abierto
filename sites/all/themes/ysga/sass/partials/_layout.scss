@@ -26,13 +26,14 @@
 
 .one-sidebar .main {
   @include media($mobile) {
-    @include span-columns(8);
+    @include span-columns(7);
   }
 }
 
 #sidebar-first {
   @include media($mobile) {
     @include span-columns(5);
+    @include shift(1);
   }
 }
 
@@ -41,12 +42,13 @@
   @include outer-container;
   .panel-content {
     @include media($mobile) {
-      @include span-columns(8);
+      @include span-columns(7);
     }
   }
   .panel-sidebar {
     @include media($mobile) {
       @include span-columns(5);
+      @include shift(1);
     }
   }
 }
