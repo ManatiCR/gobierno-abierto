@@ -5,3 +5,4 @@ dependencies[] = image
 features[features_api][] = api:2
 features[image][] = noticia_inline
 features[image][] = noticia_thumbnail
+features[image][] = slideshow_consultas

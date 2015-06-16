@@ -41,5 +41,20 @@ function ysga_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: slideshow_consultas.
+  $styles['slideshow_consultas'] = array(
+    'label' => 'Slideshow consultas',
+    'effects' => array(
+      3 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 1200,
+          'height' => 400,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
