@@ -10,6 +10,22 @@
 function ysga_image_styles_image_default_styles() {
   $styles = array();
 
+  // Exported image style: noticia_inline.
+  $styles['noticia_inline'] = array(
+    'label' => 'Noticia Inline',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 635,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: noticia_thumbnail.
   $styles['noticia_thumbnail'] = array(
     'label' => 'Noticia Thumbnail',
