@@ -1,0 +1,33 @@
+//
+// Estilos para vistas de noticias
+//
+
+.view-ysga-noticias {
+  .views-field-field-noticia-imagenes {
+    float: left;
+    margin-right: 10px;
+  }
+  .views-field-body {
+    clear: both;
+    p {
+      @include font-size(12);
+    }
+  }
+  .noticia-info-fecha {
+    color: $highlight1-color;
+    margin-right: 10px;
+  }
+  .noticia-info-categoria {
+    color: #8e8a6b;
+    background-color: #e2dcc7;
+    padding: 0 8px;
+    text-transform: uppercase;
+  }
+  h3 {
+    margin: 5px 0 0 0;
+    @include font-size(14);
+    a {
+      color: $subtitle-color;
+    }
+  }
+}

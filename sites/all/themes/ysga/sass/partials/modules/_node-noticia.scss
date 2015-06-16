@@ -1,0 +1,11 @@
+//
+// Estilos para el tipo de contenido noticia
+//
+
+.page-node.node-type-noticia {
+  .pane-node-created {
+    color: $highlight1-color;
+    @include font-size(11);
+    margin-bottom: 1em;
+  }
+}

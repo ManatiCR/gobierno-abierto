@@ -1,0 +1,7 @@
+//
+// Estilos generales para paneles
+//
+
+.panel-sidebar .pane-title {
+  @extend %title;
+}
