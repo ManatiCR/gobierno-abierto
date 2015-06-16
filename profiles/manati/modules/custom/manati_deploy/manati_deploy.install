@@ -153,3 +153,18 @@ function manati_deploy_update_7006() {
 function manati_deploy_update_7007() {
   module_enable(array('ysga_ct_acerca'));
 }
+
+/**
+ * Enable panels and 'Noticia' display panel
+ */
+function manati_deploy_update_7008() {
+  $module_list = array(
+    'panels',
+    'page_manager',
+    'ysga_image_styles',
+    'ysga_views_noticias',
+    'ysga_layout_noticia'
+  );
+
+  module_enable($module_list);
+}
