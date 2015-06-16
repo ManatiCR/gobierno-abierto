@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA "Consulta" page layout feature.
+ */
+
+include_once 'ysga_layout_consulta.features.inc';

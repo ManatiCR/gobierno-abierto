@@ -168,3 +168,10 @@ function manati_deploy_update_7008() {
 
   module_enable($module_list);
 }
+
+/**
+ * Enable consulta page display panel
+ */
+function manati_deploy_update_7009() {
+  module_enable(array('ysga_layout_consulta'));
+}
