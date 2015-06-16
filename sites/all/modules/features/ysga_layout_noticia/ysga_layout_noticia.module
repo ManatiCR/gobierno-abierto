@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA "Noticia" Page Layout feature.
+ */
+
+include_once 'ysga_layout_noticia.features.inc';
