@@ -95,3 +95,23 @@ th, td {
     }
   }
 }
+
+// Reusable components
+
+.button {
+  overflow: hidden;
+  @include font-size(11);
+}
+
+.button a {
+  display: inline-block;
+  background-color: #ccc;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.button--alpha a {
+  background-color: $title-color;
+  border-bottom: 2px solid darken($title-color, 15%);
+}
