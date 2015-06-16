@@ -40,6 +40,13 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  font-family: $subtitle-font;
+  color: $subtitle-color;
+  font-weight: 700;
+}
+
+h1.title {
+  @include font-size(24);
 }
 
 // Tablas
