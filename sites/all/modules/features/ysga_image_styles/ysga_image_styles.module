@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Image Styles feature.
+ */
+
+include_once 'ysga_image_styles.features.inc';

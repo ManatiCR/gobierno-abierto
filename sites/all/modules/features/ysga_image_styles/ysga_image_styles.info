@@ -1,0 +1,6 @@
+name = YSGA Image Styles
+core = 7.x
+package = YSGA
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = noticia_thumbnail
