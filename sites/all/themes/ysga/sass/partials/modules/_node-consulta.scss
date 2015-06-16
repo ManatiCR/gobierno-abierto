@@ -1,0 +1,27 @@
+//
+// Estilos para tipo de contenido Consulta
+//
+
+.page-node.node-type-consulta {
+  .pane-node-title {
+    display: inline-block;
+    position: relative;
+    bottom: -20px;
+  }
+  .title {
+    background-color: $title-color;
+    color: #fff;
+    padding: 1em;
+    margin: 0;
+    @include font-size(20);
+    display: inline-block;
+  }
+  .pane-node-field-consulta-fecha {
+    display: inline-block;
+    color: $highlight1-color;
+    @include font-size(11);
+    margin-left: 20px;
+    position: relative;
+    bottom: -10px;
+  }
+}

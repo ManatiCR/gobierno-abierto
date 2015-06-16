@@ -38,8 +38,16 @@
 }
 
 // Panels layout
-.panel-two-col {
+
+.panel-separator {
+  display: none;
+}
+
+.panel-one-two-col, .panel-two-col {
   @include outer-container;
+  .panel-top {
+    margin-bottom: 40px;
+  }
   .panel-content {
     @include media($mobile) {
       @include span-columns(7);
