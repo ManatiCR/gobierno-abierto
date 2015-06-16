@@ -5,6 +5,7 @@ dependencies[] = block
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = fe_block
+dependencies[] = views
 features[context][] = contacto
 features[ctools][] = context:context:3
 features[fe_block_boxes][] = ysga_comoayudar

@@ -6,6 +6,7 @@ dependencies[] = ctools
 dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = menu
+dependencies[] = views
 features[context][] = ysga-acerca
 features[ctools][] = context:context:3
 features[fe_block_settings][] = menu-menu-acerca

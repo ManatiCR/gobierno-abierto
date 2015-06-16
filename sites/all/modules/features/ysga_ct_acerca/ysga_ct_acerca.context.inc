@@ -32,6 +32,12 @@ function ysga_ct_acerca_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
+        'views-ysga_noticias-block' => array(
+          'module' => 'views',
+          'delta' => 'ysga_noticias-block',
+          'region' => 'sidebar_first',
+          'weight' => '-9',
+        ),
       ),
     ),
   );
