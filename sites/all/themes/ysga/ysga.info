@@ -39,6 +39,9 @@ stylesheets[all][] = css/style.css
 ;-------------- J S -------------
 scripts[] = js/ysga.min.js
 
+;-------------- Panels ----------------
+plugins[panels][layouts] = panels
+
 ;------------ Settings ---------------
 
 settings[toggle_logo] = 1

@@ -149,6 +149,31 @@ th, td {
     #sidebar-first:last-child {
       margin-right: 0; } }
 
+.panel-two-col {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .panel-two-col::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 480px) {
+    .panel-two-col .panel-content {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 60.7029407504%; }
+      .panel-two-col .panel-content:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 480px) {
+    .panel-two-col .panel-sidebar {
+      float: left;
+      display: block;
+      margin-right: 2.1723540489%;
+      width: 37.1247052007%; }
+      .panel-two-col .panel-sidebar:last-child {
+        margin-right: 0; } }
+
 .site-logo, .site-slogan {
   display: block; }
   @media screen and (min-width: 480px) {

@@ -35,3 +35,18 @@
     @include span-columns(5);
   }
 }
+
+// Panels layout
+.panel-two-col {
+  @include outer-container;
+  .panel-content {
+    @include media($mobile) {
+      @include span-columns(8);
+    }
+  }
+  .panel-sidebar {
+    @include media($mobile) {
+      @include span-columns(5);
+    }
+  }
+}
