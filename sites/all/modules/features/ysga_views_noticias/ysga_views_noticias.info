@@ -1,0 +1,8 @@
+name = YSGA Views Noticias
+core = 7.x
+package = YSGA Views
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = ysga_noticias
+features_exclude[dependencies][ctools] = ctools

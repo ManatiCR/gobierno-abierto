@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Views Noticias feature.
+ */
+
+include_once 'ysga_views_noticias.features.inc';
