@@ -8,6 +8,7 @@ dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[variable][] = admin_theme
+features[variable][] = date_format_ysga_date_only
 features[variable][] = pathauto_case
 features[variable][] = pathauto_ignore_words
 features[variable][] = pathauto_max_component_length

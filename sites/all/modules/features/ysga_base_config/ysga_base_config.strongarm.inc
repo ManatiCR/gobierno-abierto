@@ -20,6 +20,13 @@ function ysga_base_config_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_format_ysga_date_only';
+  $strongarm->value = 'j \\d\\e F \\d\\e Y';
+  $export['date_format_ysga_date_only'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_case';
   $strongarm->value = '1';
   $export['pathauto_case'] = $strongarm;
@@ -154,7 +161,7 @@ function ysga_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_punctuation_hyphen';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['pathauto_punctuation_hyphen'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -357,7 +364,7 @@ function ysga_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'bartik';
+  $strongarm->value = 'ysga';
   $export['theme_default'] = $strongarm;
 
   return $export;
