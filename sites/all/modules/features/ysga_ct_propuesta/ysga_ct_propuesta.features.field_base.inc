@@ -62,7 +62,7 @@ function ysga_ct_propuesta_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'propuesta' => 'propuesta',
+          'consulta' => 'consulta',
         ),
       ),
       'target_type' => 'node',
