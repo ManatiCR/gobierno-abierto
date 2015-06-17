@@ -170,8 +170,15 @@ function manati_deploy_update_7008() {
 }
 
 /**
- * Enable consulta page display panel
+ * Enable consulta page display panelg
  */
 function manati_deploy_update_7009() {
   module_enable(array('ysga_layout_consulta'));
+}
+
+/**
+ * Enable colorbox module
+ */
+function manati_deploy_update_7010() {
+  module_enable(array('colorbox'));
 }
