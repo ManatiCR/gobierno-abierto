@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA "Propuesta" page layout feature.
+ */
+
+include_once 'ysga_layout_propuesta.features.inc';
