@@ -10,6 +10,21 @@
 function ysga_image_styles_image_default_styles() {
   $styles = array();
 
+  // Exported image style: consulta_thumbnail.
+  $styles['consulta_thumbnail'] = array(
+    'label' => 'Consulta Thumbnail',
+    'effects' => array(
+      4 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 130,
+          'height' => 90,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: noticia_inline.
   $styles['noticia_inline'] = array(
     'label' => 'Noticia Inline',
