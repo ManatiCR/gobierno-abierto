@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Views Consultas feature.
+ */
+
+include_once 'ysga_views_consultas.features.inc';

@@ -194,3 +194,10 @@ function manati_deploy_update_7011() {
   );
   module_enable($module_list);
 }
+
+/**
+ * Enable ysga_views_consultas feature
+ */
+function manati_deploy_update_7011() {
+  module_enable(array('ysga_views_consultas'));
+}
