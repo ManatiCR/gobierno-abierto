@@ -86,6 +86,25 @@ function ysga_layout_consulta_default_page_manager_handlers() {
     $display->content['new-8d715786-eaee-48fc-b581-26d4407bb310'] = $pane;
     $display->panels['content'][0] = 'new-8d715786-eaee-48fc-b581-26d4407bb310';
     $pane = new stdClass();
+    $pane->pid = 'new-974f3e4d-f6a2-4c93-99b5-3673b6de6c84';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ysga_propuestas-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '974f3e4d-f6a2-4c93-99b5-3673b6de6c84';
+    $display->content['new-974f3e4d-f6a2-4c93-99b5-3673b6de6c84'] = $pane;
+    $display->panels['sidebar'][0] = 'new-974f3e4d-f6a2-4c93-99b5-3673b6de6c84';
+    $pane = new stdClass();
     $pane->pid = 'new-38d0cba8-621e-4690-b6bd-a35b7c71a0c9';
     $pane->panel = 'top';
     $pane->type = 'node_title';
