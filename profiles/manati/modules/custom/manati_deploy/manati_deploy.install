@@ -182,3 +182,15 @@ function manati_deploy_update_7009() {
 function manati_deploy_update_7010() {
   module_enable(array('colorbox'));
 }
+
+/** 
+ * Enable "Propuestas" features and related modules
+ */
+function manati_deploy_update_7011() {
+  $module_list = array(
+    'views_content',
+    'ysga_views_propuestas',
+    'ysga_layout_propuesta'
+  );
+  module_enable($module_list);
+}
