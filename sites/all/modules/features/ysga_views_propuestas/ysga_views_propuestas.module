@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Views Propuestas feature.
+ */
+
+include_once 'ysga_views_propuestas.features.inc';
