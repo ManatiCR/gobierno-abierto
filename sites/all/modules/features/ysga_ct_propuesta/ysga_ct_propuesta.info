@@ -27,3 +27,4 @@ features[variable][] = menu_parent_propuesta
 features[variable][] = node_options_propuesta
 features[variable][] = node_preview_propuesta
 features[variable][] = node_submitted_propuesta
+features[variable][] = pathauto_node_propuesta_pattern
