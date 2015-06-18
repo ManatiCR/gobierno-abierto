@@ -418,4 +418,22 @@ th, td {
   position: relative;
   bottom: -10px; }
 
+.view-propuestas-consulta .view-header {
+  margin-bottom: 10px; }
+.view-propuestas-consulta .header-propuestas {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-size: 1.2rem; }
+.view-propuestas-consulta .view-footer {
+  margin-top: 20px; }
+  .view-propuestas-consulta .view-footer a {
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #20ceac; }
+.view-propuestas-consulta .views-field-title {
+  margin-bottom: 0.3em; }
+  .view-propuestas-consulta .views-field-title a {
+    color: #5d5d5d; }
+
 /*# sourceMappingURL=style.css.map */
