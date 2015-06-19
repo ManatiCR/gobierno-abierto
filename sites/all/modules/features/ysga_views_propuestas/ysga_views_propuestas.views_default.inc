@@ -23,8 +23,8 @@ function ysga_views_propuestas_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Propuestas de la consulta';
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['use_more_text'] = 'más';
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['use_more_text'] = '';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -36,6 +36,21 @@ function ysga_views_propuestas_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Encabezado: Global: Área de texto */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['label'] = 'Encabezado';
+  $handler->display->display_options['header']['area']['content'] = '<div class="header-propuestas">Propuesta</div>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* Pie de página: Global: Área de texto */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['label'] = 'Enlace hacia página de propuestas';
+  $handler->display->display_options['footer']['area']['empty'] = TRUE;
+  $handler->display->display_options['footer']['area']['content'] = '<a href="propuestas">Ver todas las propuestas ></a>';
+  $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Comportamiento si no hay resultados: Global: Texto sin filtrar */
   $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
@@ -117,6 +132,12 @@ function ysga_views_propuestas_views_default_views() {
 
   /* Display: Propuestas (página de consulta) */
   $handler = $view->new_display('panel_pane', 'Propuestas (página de consulta)', 'panel_pane_2');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = '';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Filtro contextual: Contenido: Consulta (field_propuesta_consulta) */
@@ -162,6 +183,8 @@ function ysga_views_propuestas_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Campo: Contenido: Categoría */
@@ -214,18 +237,22 @@ function ysga_views_propuestas_views_default_views() {
   $translatables['ysga_propuestas'] = array(
     t('Master'),
     t('Propuestas de la consulta'),
-    t('más'),
     t('Aplicar'),
     t('Reiniciar'),
     t('Ordenar por'),
     t('Asc'),
     t('Desc'),
+    t('Encabezado'),
+    t('<div class="header-propuestas">Propuesta</div>'),
+    t('Enlace hacia página de propuestas'),
+    t('<a href="propuestas">Ver todas las propuestas ></a>'),
     t('Sin resultados'),
     t('No se han agregado propuestas'),
     t('Consulta'),
     t('Propuesta'),
     t('Todo(s)'),
     t('Propuestas (página de propuesta)'),
+    t('más'),
     t('Propuestas (Página de propuesta)'),
     t('Paneles de vista'),
     t('Propuestas (página de consulta)'),
