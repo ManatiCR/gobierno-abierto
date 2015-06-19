@@ -2,29 +2,37 @@
 // Estilos para vistas de consultas
 //
 
-.view-propuestas-consulta {
-  .pane-title {
-    //margin-bottom: 0;
-  }
-  .view-header {
-    margin-bottom: 10px;
-  }
-  .header-propuestas {
-    font-weight: 700;
-    text-transform: uppercase;
-    @include font-size(12);
-  }
-  .view-footer {
-    margin-top: 20px;
-    a {
-      @include font-size(12);
-      color: $highlight1-color;
+.view-consultas-page {
+  @include outer-container;
+  .views-row {
+    margin-bottom: 2em;
+    @include media($mobile) {
+      @include span-columns(6);
+    }
+    &:nth-child(2n) {
+      @include media($mobile) {
+        @include shift(1);
+      }
     }
   }
-  .views-field-title {
-    margin-bottom: 0.3em;
-    a {
-      color: $text-color;
+  .views-field-field-consulta-imagenes {
+    float: left;
+    margin-right: 25px;
+    img {
+      border-radius: 5px;
+    }
+  }
+  .views-field-field-consulta-fecha {
+    color: $highlight1-color;
+    @include font-size(11);
+  }
+  .views-field-consulta-title {
+    margin: 0.5em 0;
+  }
+  .views-field-body {
+    p {
+      margin: 0;
+      @include font-size(12);
     }
   }
 }

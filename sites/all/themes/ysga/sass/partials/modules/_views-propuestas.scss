@@ -1,0 +1,30 @@
+//
+// Estilos para vistas de propuestas
+//
+
+.view-propuestas-consulta {
+  .pane-title {
+    //margin-bottom: 0;
+  }
+  .view-header {
+    margin-bottom: 10px;
+  }
+  .header-propuestas {
+    font-weight: 700;
+    text-transform: uppercase;
+    @include font-size(12);
+  }
+  .view-footer {
+    margin-top: 20px;
+    a {
+      @include font-size(12);
+      color: $highlight1-color;
+    }
+  }
+  .views-field-title {
+    margin-bottom: 0.3em;
+    a {
+      color: $text-color;
+    }
+  }
+}
