@@ -6,6 +6,9 @@
   .views-field-field-noticia-imagenes {
     float: left;
     margin-right: 10px;
+    img {
+      border-radius: 5px;
+    }
   }
   .views-field-body {
     clear: both;
@@ -30,4 +33,8 @@
       color: $subtitle-color;
     }
   }
+}
+
+.page-inicio .panel-sidebar .pane-title {
+  margin-bottom: 2em;
 }

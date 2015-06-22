@@ -30,3 +30,35 @@
     }
   }
 }
+
+.block-consultas-inicio {
+  padding: 40px;
+  background-color: $highlight1-color;
+  h2, p {
+    color: #fff;
+  }
+  .button {
+    margin-top: 2em;
+    @include font-size(12);
+    a {
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.block-propuestas-inicio {
+  padding: 40px;
+  background-color: #e8e8e8;
+  p {
+    max-width: 400px;
+  }
+  .button {
+    margin-top: 2em;
+    @include font-size(12);
+    a {
+      background-color: $subtitle-color;
+      border: 1px solid $subtitle-color;
+    }
+  }
+}

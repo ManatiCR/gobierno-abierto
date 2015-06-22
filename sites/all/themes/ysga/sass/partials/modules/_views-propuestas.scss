@@ -28,3 +28,29 @@
     }
   }
 }
+
+.propuestas-inicio {
+  .pane-title {
+    @extend %title;
+    margin-bottom: 1.5em;
+  }
+  .view-content {
+    @include span-columns(5 of 7);
+  }
+  .view-content > h3 {
+    text-transform: uppercase;
+    @include font-size(14);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3em;
+  }
+  .propuestas-inicio-propuesta {
+    margin-bottom: 2em;
+  }
+  .propuestas-inicio-propuesta-title {
+    margin-bottom: 0.3em;
+    @include font-size(13);
+  }
+  .views-field-body p {
+    @include font-size(12);
+  }
+}

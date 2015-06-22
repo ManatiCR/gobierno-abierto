@@ -24,7 +24,7 @@ html {
   white-space: nowrap;
   overflow: hidden; }
 
-.block-sidebar h2, .panel-sidebar .pane-title, .page-contact .title {
+.block-sidebar h2, .panel-sidebar .pane-title, .page-contact .title, .propuestas-inicio .pane-title {
   font-family: Dosis, sans-serif;
   color: #f7931e;
   font-size: 22px;
@@ -213,6 +213,31 @@ th, td {
       .panel-one-two-col .panel-sidebar:last-child, .panel-two-col .panel-sidebar:last-child {
         margin-right: 0; } }
 
+.page-inicio .panel-one-two-col .panel-top {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-inicio .panel-one-two-col .panel-top::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.block-consultas-inicio {
+  float: left;
+  display: block;
+  margin-right: 2.1723540489%;
+  width: 29.2652933508%; }
+  .block-consultas-inicio:last-child {
+    margin-right: 0; }
+
+.block-propuestas-inicio {
+  float: left;
+  display: block;
+  margin-right: 2.1723540489%;
+  width: 68.5623526003%; }
+  .block-propuestas-inicio:last-child {
+    margin-right: 0; }
+
 .site-logo, .site-slogan {
   display: block; }
   @media screen and (min-width: 480px) {
@@ -379,6 +404,32 @@ th, td {
       font-size: 30px;
       font-size: 3rem; }
 
+.block-consultas-inicio {
+  padding: 40px;
+  background-color: #20ceac; }
+  .block-consultas-inicio h2, .block-consultas-inicio p {
+    color: #fff; }
+  .block-consultas-inicio .button {
+    margin-top: 2em;
+    font-size: 12px;
+    font-size: 1.2rem; }
+    .block-consultas-inicio .button a {
+      background-color: transparent;
+      border: 1px solid #fff; }
+
+.block-propuestas-inicio {
+  padding: 40px;
+  background-color: #e8e8e8; }
+  .block-propuestas-inicio p {
+    max-width: 400px; }
+  .block-propuestas-inicio .button {
+    margin-top: 2em;
+    font-size: 12px;
+    font-size: 1.2rem; }
+    .block-propuestas-inicio .button a {
+      background-color: #2f2935;
+      border: 1px solid #2f2935; }
+
 .page-contact label {
   color: #2f2935;
   font-size: 12px;
@@ -419,6 +470,8 @@ th, td {
 .view-ysga-noticias .views-field-field-noticia-imagenes {
   float: left;
   margin-right: 10px; }
+  .view-ysga-noticias .views-field-field-noticia-imagenes img {
+    border-radius: 5px; }
 .view-ysga-noticias .views-field-body {
   clear: both; }
   .view-ysga-noticias .views-field-body p {
@@ -438,6 +491,9 @@ th, td {
   font-size: 1.4rem; }
   .view-ysga-noticias h3 a {
     color: #2f2935; }
+
+.page-inicio .panel-sidebar .pane-title {
+  margin-bottom: 2em; }
 
 .page-node.node-type-noticia .pane-node-created {
   color: #20ceac;
@@ -520,5 +576,30 @@ th, td {
   margin-bottom: 0.3em; }
   .view-propuestas-consulta .views-field-title a {
     color: #5d5d5d; }
+
+.propuestas-inicio .pane-title {
+  margin-bottom: 1.5em; }
+.propuestas-inicio .view-content {
+  float: left;
+  display: block;
+  margin-right: 4.1109178249%;
+  width: 70.2540234786%; }
+  .propuestas-inicio .view-content:last-child {
+    margin-right: 0; }
+.propuestas-inicio .view-content > h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3em; }
+.propuestas-inicio .propuestas-inicio-propuesta {
+  margin-bottom: 2em; }
+.propuestas-inicio .propuestas-inicio-propuesta-title {
+  margin-bottom: 0.3em;
+  font-size: 13px;
+  font-size: 1.3rem; }
+.propuestas-inicio .views-field-body p {
+  font-size: 12px;
+  font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */
