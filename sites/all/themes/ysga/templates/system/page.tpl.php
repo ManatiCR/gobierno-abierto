@@ -114,6 +114,11 @@
     <nav class="nav nav-main">
       <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
     </nav>
+    <nav class="nav nav-social">
+      <div class="content">
+      <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
+      </div>
+    </nav>
     <?php print render($page['footer']); ?>
   </div>
 </footer>
