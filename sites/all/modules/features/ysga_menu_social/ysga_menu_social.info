@@ -1,0 +1,12 @@
+name = Menú Redes Sociales
+core = 7.x
+package = YSGA
+dependencies[] = fe_block
+dependencies[] = features
+dependencies[] = menu
+features[fe_block_settings][] = menu-menu-social
+features[features_api][] = api:2
+features[menu_custom][] = menu-social
+features[menu_links][] = menu-social_contacto:contact
+features[menu_links][] = menu-social_facebook:https://www.facebook.com/yosoygobiernoabierto
+features[menu_links][] = menu-social_twitter:https://twitter.com/YoSoyGobAbierto
