@@ -1,0 +1,43 @@
+//
+// Estilos para menú de redes sociales
+//
+
+.nav-social {
+  h2 {
+    @extend %hidden;
+  }
+  .content {
+    li {
+      list-style-type: none;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    a {
+      @extend %text-hidden;
+      display: block;
+      background-image: url(../img/sprite.svg);
+    }
+  }
+}
+
+.social-facebook {
+  width: 7px;
+  height: 16px;
+  background-position: 0 0;
+}
+
+.social-twitter {
+  width: 15px;
+  height: 12px;
+  background-position: 0 -20px;
+}
+
+.social-contact {
+  width: 18px;
+  height: 13px;
+  background-position: 0 -34px;
+}

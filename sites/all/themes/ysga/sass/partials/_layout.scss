@@ -4,6 +4,7 @@
 
 .header-content {
   margin: 10px;
+  position: relative;
   @include media($mobile) {
     height: 120px;
     margin: 0;
@@ -12,6 +13,7 @@
 }
 
 .footer-content {
+  position: relative;
   @include outer-container;
 }
 

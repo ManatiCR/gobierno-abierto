@@ -13,11 +13,16 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.element-invisible, .nav-main h2 {
+.element-invisible, .nav-main h2, .nav-social h2 {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
+
+.nav-social .content a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
 
 .block-sidebar h2, .panel-sidebar .pane-title, .page-contact .title {
   font-family: Dosis, sans-serif;
@@ -121,7 +126,8 @@ th, td {
   border-bottom: 2px solid #c26c07; }
 
 .header-content {
-  margin: 10px; }
+  margin: 10px;
+  position: relative; }
   @media screen and (min-width: 480px) {
     .header-content {
       height: 120px;
@@ -135,6 +141,7 @@ th, td {
         display: table; } }
 
 .footer-content {
+  position: relative;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
@@ -230,9 +237,19 @@ th, td {
       max-width: 350px;
       padding-top: 15px; } }
 
+.header-content .nav-social {
+  position: absolute;
+  top: 36px;
+  right: 0; }
+
 .footer {
   background-color: #2f2935;
   padding: 20px 0; }
+
+.footer-content .nav-social {
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 .nav .content ul {
   margin: 0;
@@ -298,6 +315,9 @@ th, td {
 
 .footer .nav-main {
   border: none; }
+  .footer .nav-main ul {
+    padding: 0;
+    margin: 0; }
   .footer .nav-main li {
     display: inline;
     text-transform: uppercase;
@@ -309,6 +329,32 @@ th, td {
     font-size: 1.2rem; }
     .footer .nav-main a.active {
       color: #fff; }
+
+.nav-social .content li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px; }
+  .nav-social .content li:first-child {
+    margin-left: 0; }
+.nav-social .content a {
+  display: block;
+  background-image: url(../img/sprite.svg); }
+
+.social-facebook {
+  width: 7px;
+  height: 16px;
+  background-position: 0 0; }
+
+.social-twitter {
+  width: 15px;
+  height: 12px;
+  background-position: 0 -20px; }
+
+.social-contact {
+  width: 18px;
+  height: 13px;
+  background-position: 0 -34px; }
 
 .block-sidebar {
   margin-bottom: 40px; }
