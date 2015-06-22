@@ -26,6 +26,12 @@ function ysga_ct_header_blocks_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'menu-menu-social' => array(
+          'module' => 'menu',
+          'delta' => 'menu-social',
+          'region' => 'header',
+          'weight' => '-10',
+        ),
         'system-main-menu' => array(
           'module' => 'system',
           'delta' => 'main-menu',

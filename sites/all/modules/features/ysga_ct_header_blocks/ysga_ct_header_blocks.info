@@ -4,6 +4,7 @@ core = 7.x
 package = YSGA Contexts
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = menu
 features[context][] = ysga-sitewide-header
 features[ctools][] = context:context:3
 features[features_api][] = api:2
