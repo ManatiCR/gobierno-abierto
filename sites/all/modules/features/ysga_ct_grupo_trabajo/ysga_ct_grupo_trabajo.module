@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Grupo de trabajo feature.
+ */
+
+include_once 'ysga_ct_grupo_trabajo.features.inc';

@@ -201,3 +201,10 @@ function manati_deploy_update_7011() {
 function manati_deploy_update_7012() {
   module_enable(array('ysga_views_consultas'));
 }
+
+/**
+ * Enable ysga_views_consultas feature
+ */
+function manati_deploy_update_7013() {
+  module_enable(array('ysga_ct_grupo_trabajo'));
+}
