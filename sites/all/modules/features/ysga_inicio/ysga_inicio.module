@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Página de inicio feature.
+ */
+
+include_once 'ysga_inicio.features.inc';

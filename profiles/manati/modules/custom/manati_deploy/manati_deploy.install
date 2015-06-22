@@ -215,3 +215,10 @@ function manati_deploy_update_7013() {
 function manati_deploy_update_7014() {
   module_enable(array('ysga_menu_social'));
 }
+
+/**
+ * Enable ysga_inicio feature
+ */
+function manati_deploy_update_7015() {
+  module_enable(array('ysga_inicio'));
+}
