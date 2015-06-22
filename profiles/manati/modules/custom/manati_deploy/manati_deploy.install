@@ -208,3 +208,10 @@ function manati_deploy_update_7012() {
 function manati_deploy_update_7013() {
   module_enable(array('ysga_ct_grupo_trabajo'));
 }
+
+/**
+ * Enable ysga_menu_social feature
+ */
+function manati_deploy_update_7014() {
+  module_enable(array('ysga_menu_social'));
+}
