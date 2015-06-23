@@ -2,6 +2,37 @@
 // Estilos para vistas de propuestas
 //
 
+.view-propuestas-page {
+  overflow: hidden;
+  .category-wrapper {
+    width: 33.333333%;
+    float: left;
+    &:first-child .category-title {
+      background-color: $highlight1-color;
+    }
+    &:last-child .category-title {
+      background-color: darken($highlight1-color, 10%);
+    }
+  }
+  .category-title {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: darken($highlight1-color, 5%);
+    padding: 2em;
+  }
+  .views-row {
+    padding: 0 2em;
+    margin-bottom: 5em;
+  }
+  .propuesta-title {
+    @include font-size(14);
+    margin-bottom: 0.5em;
+  }
+  .propuesta-body p {
+    @include font-size(12);
+  }
+}
+
 .view-propuestas-consulta {
   .pane-title {
     //margin-bottom: 0;

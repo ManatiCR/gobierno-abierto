@@ -572,6 +572,31 @@ th, td {
     font-size: 12px;
     font-size: 1.2rem; }
 
+.view-propuestas-page {
+  overflow: hidden; }
+  .view-propuestas-page .category-wrapper {
+    width: 33.333333%;
+    float: left; }
+    .view-propuestas-page .category-wrapper:first-child .category-title {
+      background-color: #20ceac; }
+    .view-propuestas-page .category-wrapper:last-child .category-title {
+      background-color: #19a287; }
+  .view-propuestas-page .category-title {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1db89a;
+    padding: 2em; }
+  .view-propuestas-page .views-row {
+    padding: 0 2em;
+    margin-bottom: 5em; }
+  .view-propuestas-page .propuesta-title {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 0.5em; }
+  .view-propuestas-page .propuesta-body p {
+    font-size: 12px;
+    font-size: 1.2rem; }
+
 .view-propuestas-consulta .view-header {
   margin-bottom: 10px; }
 .view-propuestas-consulta .header-propuestas {
