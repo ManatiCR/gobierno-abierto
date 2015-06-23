@@ -430,6 +430,8 @@ th, td {
       background-color: #2f2935;
       border: 1px solid #2f2935; }
 
+.page-contact .contact-form {
+  margin-top: 40px; }
 .page-contact label {
   color: #2f2935;
   font-size: 12px;

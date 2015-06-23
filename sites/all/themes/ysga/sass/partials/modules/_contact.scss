@@ -6,6 +6,9 @@
   .title {
     @extend %title;
   }
+  .contact-form {
+    margin-top: 40px;
+  }
   label {
     color: $subtitle-color;
     @include font-size(12);
