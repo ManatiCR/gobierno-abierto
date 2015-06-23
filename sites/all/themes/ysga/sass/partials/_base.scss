@@ -52,6 +52,20 @@ h1.title {
   @include font-size(24);
 }
 
+h3 {
+  @include font-size(16);
+}
+
+h4, h5, h6 {
+  @include font-size(14);
+}
+
+.field-name-body {
+  h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+  }
+}
+
 // Tablas
 table {
   width: 100%;
