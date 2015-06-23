@@ -229,3 +229,10 @@ function manati_deploy_update_7015() {
 function manati_deploy_update_7016() {
   module_enable(array('webform'));
 }
+
+/**
+ * Enable ysga_ct_webform feature
+ */
+function manati_deploy_update_7017() {
+  module_enable(array('ysga_ct_webform'));
+}
