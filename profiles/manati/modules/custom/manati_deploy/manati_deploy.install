@@ -222,3 +222,10 @@ function manati_deploy_update_7014() {
 function manati_deploy_update_7015() {
   module_enable(array('ysga_inicio'));
 }
+
+/**
+ * Enable webform module
+ */
+function manati_deploy_update_7016() {
+  module_enable(array('webform'));
+}
