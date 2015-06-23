@@ -26,6 +26,12 @@ function ysga_ct_contact_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'block-4' => array(
+          'module' => 'block',
+          'delta' => '4',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'block-1' => array(
           'module' => 'block',
           'delta' => '1',
