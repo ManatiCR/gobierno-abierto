@@ -144,6 +144,29 @@ function ysga_layout_noticia_default_page_manager_handlers() {
     $display->content['new-58d4fd26-2799-479c-a9d1-49c96ef7d4b6'] = $pane;
     $display->panels['content'][2] = 'new-58d4fd26-2799-479c-a9d1-49c96ef7d4b6';
     $pane = new stdClass();
+    $pane->pid = 'new-712ad38e-c115-4d75-8f34-af36a9d5bee6';
+    $pane->panel = 'content';
+    $pane->type = 'block';
+    $pane->subtype = 'disqus-disqus_comments';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Comentarios',
+      'override_title_heading' => 'h3',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '712ad38e-c115-4d75-8f34-af36a9d5bee6';
+    $display->content['new-712ad38e-c115-4d75-8f34-af36a9d5bee6'] = $pane;
+    $display->panels['content'][3] = 'new-712ad38e-c115-4d75-8f34-af36a9d5bee6';
+    $pane = new stdClass();
     $pane->pid = 'new-d9a1d355-e3fd-43f5-b81d-12638ba12814';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
