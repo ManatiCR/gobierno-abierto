@@ -236,3 +236,10 @@ function manati_deploy_update_7016() {
 function manati_deploy_update_7017() {
   module_enable(array('ysga_ct_webform'));
 }
+
+/**
+ * Enable disqus and disqus config feature
+ */
+function manati_deploy_update_7018() {
+  module_enable(array('disqus', 'ysga_disqus_configuration'));
+}
