@@ -649,4 +649,23 @@ th, td {
   font-size: 12px;
   font-size: 1.2rem; }
 
+.webform-client-form {
+  margin-top: 5em; }
+  .webform-client-form label {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 0.8em; }
+  .webform-client-form .form-item {
+    margin: 0 0 3em 0; }
+  .webform-client-form .form-type-radio {
+    margin: 0 0 0.8em 0; }
+  .webform-client-form .form-submit {
+    border: none;
+    border-radius: 3px;
+    background-color: #29abe2;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+
 /*# sourceMappingURL=style.css.map */

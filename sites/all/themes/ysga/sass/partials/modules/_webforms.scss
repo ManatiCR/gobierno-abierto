@@ -1,0 +1,25 @@
+//
+// Estilos para los webforms
+//
+
+.webform-client-form {
+  margin-top: 5em;
+  label {
+    @include font-size(14);
+    margin-bottom: 0.8em;
+  }
+  .form-item {
+    margin: 0 0 3em 0;
+  }
+  .form-type-radio {
+    margin: 0 0 0.8em 0;
+  }
+  .form-submit {
+    border: none;
+    border-radius: 3px;
+    background-color: $highlight2-color;
+    color: #fff;
+    padding: 8px 15px;
+    @include font-size(14);
+  }
+}
