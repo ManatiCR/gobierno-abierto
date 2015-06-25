@@ -19,7 +19,7 @@ function ysga_ct_webform_ctools_plugin_api($module = NULL, $api = NULL) {
 function ysga_ct_webform_node_info() {
   $items = array(
     'webform' => array(
-      'name' => t('Webform'),
+      'name' => t('Formulario web'),
       'base' => 'node_content',
       'description' => t('Formulario web'),
       'has_title' => '1',
