@@ -44,7 +44,6 @@ dependencies[] = jquery_update
 dependencies[] = l10n_update
 dependencies[] = libraries
 dependencies[] = link
-dependencies[] = logintoboggan
 dependencies[] = module_filter
 dependencies[] = menu_attributes
 dependencies[] = pathauto
