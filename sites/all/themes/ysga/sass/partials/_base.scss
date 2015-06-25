@@ -118,6 +118,7 @@ th, td {
 .button {
   overflow: hidden;
   @include font-size(11);
+  margin: 0;
 }
 
 .button a {
