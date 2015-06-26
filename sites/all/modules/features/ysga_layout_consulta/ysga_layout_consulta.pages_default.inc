@@ -86,6 +86,29 @@ function ysga_layout_consulta_default_page_manager_handlers() {
     $display->content['new-8d715786-eaee-48fc-b581-26d4407bb310'] = $pane;
     $display->panels['content'][0] = 'new-8d715786-eaee-48fc-b581-26d4407bb310';
     $pane = new stdClass();
+    $pane->pid = 'new-52e43b07-bec6-4bdd-95b0-664427be622f';
+    $pane->panel = 'content';
+    $pane->type = 'block';
+    $pane->subtype = 'disqus-disqus_comments';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Comentarios',
+      'override_title_heading' => 'h3',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '52e43b07-bec6-4bdd-95b0-664427be622f';
+    $display->content['new-52e43b07-bec6-4bdd-95b0-664427be622f'] = $pane;
+    $display->panels['content'][1] = 'new-52e43b07-bec6-4bdd-95b0-664427be622f';
+    $pane = new stdClass();
     $pane->pid = 'new-974f3e4d-f6a2-4c93-99b5-3673b6de6c84';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';

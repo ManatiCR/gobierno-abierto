@@ -57,9 +57,9 @@ function ysga_disqus_configuration_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'disqus_nodetypes';
   $strongarm->value = array(
+    'consulta' => 'consulta',
     'noticia' => 'noticia',
     'propuesta' => 'propuesta',
-    'consulta' => 0,
     'grupo_de_trabajo' => 0,
     'page' => 0,
     'webform' => 0,
@@ -71,9 +71,9 @@ function ysga_disqus_configuration_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'disqus_nodetypes_default';
   $strongarm->value = array(
+    'consulta' => 'consulta',
     'noticia' => 'noticia',
     'propuesta' => 'propuesta',
-    'consulta' => 0,
     'grupo_de_trabajo' => 0,
     'page' => 0,
     'webform' => 0,
