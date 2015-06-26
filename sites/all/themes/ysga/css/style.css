@@ -404,13 +404,13 @@ th, td {
     border-bottom: none;
     padding: 0;
     margin: 0; }
-  .block-sidebar--como-ayudar a {
+  .block-sidebar--como-ayudar .content a {
     color: #29abe2;
     font-family: Dosis, sans-serif;
     text-transform: uppercase;
     font-size: 22px;
     font-size: 2.2rem; }
-    .block-sidebar--como-ayudar a:after {
+    .block-sidebar--como-ayudar .content a:after {
       content: ">";
       margin-left: 5px;
       font-size: 30px;
@@ -667,5 +667,24 @@ th, td {
     padding: 8px 15px;
     font-size: 14px;
     font-size: 1.4rem; }
+  .webform-client-form .webform-component-file .description {
+    font-size: 10px;
+    font-size: 1rem;
+    margin-top: 0.5em; }
+  .webform-client-form .webform-component-file .form-submit {
+    font-size: 12px;
+    font-size: 1.2rem;
+    background-color: #2f2935;
+    padding: 6px 12px; }
+
+.webform-confirmation .links {
+  margin-top: 1em; }
+  .webform-confirmation .links a {
+    display: inline-block;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: #f7931e;
+    border-bottom: 2px solid #c26c07; }
 
 /*# sourceMappingURL=style.css.map */
