@@ -418,7 +418,8 @@ th, td {
 
 .block-consultas-inicio {
   padding: 40px;
-  background-color: #20ceac; }
+  background-color: #20ceac;
+  border-radius: 4px; }
   .block-consultas-inicio h2, .block-consultas-inicio p {
     color: #fff; }
   .block-consultas-inicio .button {
@@ -431,7 +432,8 @@ th, td {
 
 .block-propuestas-inicio {
   padding: 40px;
-  background-color: #e8e8e8; }
+  background-color: #e8e8e8;
+  border-radius: 4px; }
   .block-propuestas-inicio p {
     max-width: 400px; }
   .block-propuestas-inicio .button {
@@ -441,6 +443,22 @@ th, td {
     .block-propuestas-inicio .button a {
       background-color: #2f2935;
       border: 1px solid #2f2935; }
+
+.block-proponga {
+  margin: 2em 0;
+  background-color: #f7931e;
+  padding: 40px;
+  border-radius: 4px; }
+  .block-proponga p {
+    color: #fff;
+    font-size: 16px;
+    font-size: 1.6rem;
+    display: inline-block; }
+  .block-proponga .button {
+    margin-left: 5em; }
+    .block-proponga .button a {
+      border: 1px solid #fff;
+      background-color: transparent; }
 
 .page-contact .contact-form {
   margin-top: 40px; }
