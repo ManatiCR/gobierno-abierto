@@ -1,0 +1,36 @@
+//
+// Estilos misceláneos
+//
+
+.proponga-cta {
+  margin-top: 6em;
+  text-align: center;
+  a {
+    width: 290px;
+    min-height: 130px;
+    display: inline-block;
+    background-color: $highlight2-color;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    vertical-align: top;
+  }
+  p {
+    margin: 0;
+    @include font-size(12);
+    color: #fff;
+  }
+  h3 {
+    margin: 0 0 0.3em 0;
+    color: #fff;
+    @include font-size(20);
+  }
+}
+
+.proponga-cta-archivo {
+  margin-right: 1em;
+}
+
+.proponga-cta-formulario {
+  margin-left: 1em;
+}

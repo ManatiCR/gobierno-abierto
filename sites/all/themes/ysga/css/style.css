@@ -687,4 +687,33 @@ th, td {
     background-color: #f7931e;
     border-bottom: 2px solid #c26c07; }
 
+.proponga-cta {
+  margin-top: 6em;
+  text-align: center; }
+  .proponga-cta a {
+    width: 290px;
+    min-height: 130px;
+    display: inline-block;
+    background-color: #29abe2;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    vertical-align: top; }
+  .proponga-cta p {
+    margin: 0;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #fff; }
+  .proponga-cta h3 {
+    margin: 0 0 0.3em 0;
+    color: #fff;
+    font-size: 20px;
+    font-size: 2rem; }
+
+.proponga-cta-archivo {
+  margin-right: 1em; }
+
+.proponga-cta-formulario {
+  margin-left: 1em; }
+
 /*# sourceMappingURL=style.css.map */
