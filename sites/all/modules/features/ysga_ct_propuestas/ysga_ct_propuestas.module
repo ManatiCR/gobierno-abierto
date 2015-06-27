@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Propuestas Context feature.
+ */
+
+include_once 'ysga_ct_propuestas.features.inc';

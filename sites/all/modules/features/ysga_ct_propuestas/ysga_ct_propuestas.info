@@ -1,0 +1,12 @@
+name = YSGA Propuestas Context
+core = 7.x
+package = YSGA Contexts
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = fe_block
+features[context][] = propuestas
+features[ctools][] = context:context:3
+features[fe_block_boxes][] = propuestas_proponga
+features[fe_block_settings][] = block-propuestas_proponga
+features[features_api][] = api:2
