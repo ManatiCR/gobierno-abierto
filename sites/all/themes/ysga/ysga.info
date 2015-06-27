@@ -37,7 +37,7 @@ regions[closure]            = Closure
 stylesheets[all][] = css/style.css
 
 ;-------------- J S -------------
-scripts[] = js/ysga.min.js
+;scripts[] = js/ysga.min.js
 
 ;-------------- Panels ----------------
 plugins[panels][layouts] = panels
@@ -52,18 +52,17 @@ settings[toggle_comment_user_picture] = 1
 settings[toggle_comment_user_verification] = 1
 settings[toggle_favicon] = 1
 settings[default_logo] = 1
-settings[logo_path] = 
-settings[logo_upload] = 
+settings[logo_path] =
+settings[logo_upload] =
 settings[default_favicon] = 1
-settings[favicon_path] = 
-settings[favicon_upload] = 
+settings[favicon_path] =
+settings[favicon_upload] =
 settings[html5shim] = 0
 settings[respond_js] = 0
 settings[normalize_css] = 0
-settings[jquery_update_jquery_version] = 
+settings[jquery_update_jquery_version] =
 settings[magic_css_excludes] = system/system.menus.css
 settings[magic_footer_js] = 0
 settings[magic_library_head] = 0
 settings[magic_experimental_js] = 0
-settings[magic_js_excludes] = 
-
+settings[magic_js_excludes] =
