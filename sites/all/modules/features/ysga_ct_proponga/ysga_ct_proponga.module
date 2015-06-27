@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA "Proponga" pages feature.
+ */
+
+include_once 'ysga_ct_proponga.features.inc';

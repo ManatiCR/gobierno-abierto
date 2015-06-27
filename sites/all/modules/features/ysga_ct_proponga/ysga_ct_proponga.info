@@ -1,0 +1,9 @@
+name = YSGA "Proponga" pages
+core = 7.x
+package = YSGA Contexts
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+features[context][] = proponga
+features[ctools][] = context:context:3
+features[features_api][] = api:2
