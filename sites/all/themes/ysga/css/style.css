@@ -138,22 +138,25 @@ th, td {
   border-bottom: 2px solid #c26c07; }
 
 .header-content {
-  margin: 10px;
-  position: relative; }
+  padding: 0 20px;
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .header-content::after {
+    clear: both;
+    content: "";
+    display: table; }
   @media screen and (min-width: 480px) {
     .header-content {
-      height: 120px;
-      margin: 0;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto; }
-      .header-content::after {
-        clear: both;
-        content: "";
-        display: table; } }
+      height: 120px; } }
+  @media screen and (min-width: 1200px) {
+    .header-content {
+      padding: 0; } }
 
 .footer-content {
   position: relative;
+  padding: 0 20px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
@@ -161,9 +164,13 @@ th, td {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 1200px) {
+    .footer-content {
+      padding: 0; } }
 
 .main-content {
   margin: 40px 0;
+  padding: 0 20px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
@@ -171,6 +178,9 @@ th, td {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 1200px) {
+    .main-content {
+      padding: 0; } }
 
 .no-sidebars .main {
   width: 100%; }
@@ -277,7 +287,10 @@ th, td {
 .header-content .nav-social {
   position: absolute;
   top: 36px;
-  right: 0; }
+  right: 20px; }
+  @media screen and (min-width: 1200px) {
+    .header-content .nav-social {
+      right: 0; } }
 
 .footer {
   background-color: #2f2935;
@@ -285,8 +298,11 @@ th, td {
 
 .footer-content .nav-social {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 0; }
+  @media screen and (min-width: 1200px) {
+    .footer-content .nav-social {
+      right: 0; } }
 
 .nav .content ul {
   margin: 0;
@@ -316,13 +332,16 @@ th, td {
 .nav-main {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .nav-main::after {
-    clear: both;
-    content: "";
-    display: table; }
+  margin: 0 20px; }
+  @media screen and (min-width: 1200px) {
+    .nav-main {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto; }
+      .nav-main::after {
+        clear: both;
+        content: "";
+        display: table; } }
   .nav-main .content li {
     text-transform: uppercase; }
     .nav-main .content li:first-child a {
@@ -351,7 +370,8 @@ th, td {
       font-weight: 700; }
 
 .footer .nav-main {
-  border: none; }
+  border: none;
+  margin: 0; }
   .footer .nav-main ul {
     padding: 0;
     margin: 0; }

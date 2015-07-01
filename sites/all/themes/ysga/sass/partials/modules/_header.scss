@@ -30,5 +30,8 @@
 .header-content .nav-social {
   position: absolute;
   top: 36px;
-  right: 0;
+  right: 20px;
+  @include media($full-width) {
+    right: 0;
+  }
 }

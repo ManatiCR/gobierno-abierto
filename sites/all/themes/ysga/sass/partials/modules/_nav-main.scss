@@ -1,11 +1,14 @@
-// 
+//
 // Main navigation styles
 //
 
 .nav-main {
   border-top: 1px solid $background-color;
   border-bottom: 1px solid $background-color;
-  @include outer-container;
+  margin: 0 20px;
+  @include media($full-width) {
+    @include outer-container;
+  }
   h2 {
     @extend %hidden;
   }
@@ -48,6 +51,7 @@
 
 .footer .nav-main {
   border: none;
+  margin: 0;
   ul {
     padding: 0;
     margin: 0;

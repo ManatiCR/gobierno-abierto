@@ -5,6 +5,9 @@
 
 .footer-content .nav-social {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 0;
+  @include media($full-width) {
+    right: 0;
+  }
 }

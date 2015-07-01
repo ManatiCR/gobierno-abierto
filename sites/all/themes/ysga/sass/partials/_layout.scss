@@ -3,23 +3,33 @@
 //
 
 .header-content {
-  margin: 10px;
+  padding: 0 20px;
   position: relative;
+  @include outer-container;
   @include media($mobile) {
     height: 120px;
-    margin: 0;
-    @include outer-container;
+  }
+  @include media($full-width) {
+    padding: 0;
   }
 }
 
 .footer-content {
   position: relative;
+  padding: 0 20px;
   @include outer-container;
+  @include media($full-width) {
+    padding: 0;
+  }
 }
 
 .main-content {
   margin: 40px 0;
+  padding: 0 20px;
   @include outer-container;
+  @include media($full-width) {
+    padding: 0;
+  }
 }
 
 .no-sidebars .main {
