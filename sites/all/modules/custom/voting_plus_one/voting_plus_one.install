@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Install file for plus one style voting module.
+ */
+
+/**
+ * Implements hook_field_schema().
+ */
+function voting_plus_one_field_schema($field) {
+  return array(
+    'columns' => array(
+      'votes' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+  );
+}
