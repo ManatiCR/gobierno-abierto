@@ -682,9 +682,10 @@ th, td {
   margin-bottom: 0.3em;
   font-size: 13px;
   font-size: 1.3rem; }
-.propuestas-inicio .views-field-body p {
+.propuestas-inicio .views-field-body {
   font-size: 12px;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin-bottom: 0.5em; }
 
 .webform-client-form {
   margin-top: 5em; }
