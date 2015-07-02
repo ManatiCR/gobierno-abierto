@@ -154,11 +154,65 @@ function ysga_ct_propuesta_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-propuesta-field_votes'
+  $field_instances['node-propuesta-field_votes'] = array(
+    'bundle' => 'propuesta',
+    'default_value' => array(
+      0 => array(
+        'votes' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'voting_plus_one',
+        'settings' => array(),
+        'type' => 'voting_plus_one',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_votes',
+    'label' => 'Votes',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Votes',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'voting_plus_one',
+      'settings' => array(),
+      'type' => 'voting_plus_one',
+      'weight' => 34,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Categoría');
   t('Consulta');
+  t('Votes');
 
   return $field_instances;
 }

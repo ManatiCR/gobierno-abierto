@@ -71,5 +71,20 @@ function ysga_ct_propuesta_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_votes'
+  $field_bases['field_votes'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_votes',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'voting_plus_one',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'voting_plus_one',
+  );
+
   return $field_bases;
 }
