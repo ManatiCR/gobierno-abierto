@@ -16,7 +16,10 @@ function ysga_inicio_default_page_manager_pages() {
   $page->admin_title = 'Página de inicio';
   $page->admin_description = '';
   $page->path = 'inicio';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(

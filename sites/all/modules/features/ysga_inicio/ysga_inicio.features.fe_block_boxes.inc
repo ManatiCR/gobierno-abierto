@@ -23,7 +23,7 @@ function ysga_inicio_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Propuestas página de inicio';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'ysga_block_propuestas_inicio';
-  $fe_block_boxes->body = '<p>… de los cuales se generarán propuestas y podrás votar por acá por las que más te parezcan.</p>
+  $fe_block_boxes->body = '<p>… de los cuales se generarán propuestas que podrás comentar por acá para dar tus aportes.</p>
 <p class="button button--delta"><a href="propuestas">¡Conocé las propuestas!</a></p>';
 
   $export['ysga_block_propuestas_inicio'] = $fe_block_boxes;
