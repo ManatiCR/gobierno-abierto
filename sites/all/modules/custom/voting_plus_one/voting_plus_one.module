@@ -114,49 +114,54 @@ function voting_plus_one_form_field_ui_field_edit_form_alter(&$form, &$form_stat
  */
 function voting_plus_one_get_voting_form($form, $form_state, $entity_type, $entity, $field) {
   $ewrapper = entity_metadata_wrapper($entity_type, $entity);
-  if (user_access('vote using plus one voting style') && !voting_plus_one_user_has_voted_in_entity($entity_type, $ewrapper->getIdentifier())) {
-    $form['entity_type'] = array(
-      '#type' => 'value',
-      '#value' => $entity_type,
-    );
-    $form['entity'] = array(
-      '#type' => 'value',
-      '#value' => $ewrapper,
-    );
-    $form['field'] = array(
-      '#type' => 'value',
-      '#value' => $field,
-    );
-    $form['voting'] = array(
-      '#type' => 'container',
-      '#prefix' => '<div id="voting-plus-one">',
-      '#suffix' => '</div>',
-    );
-    $form['voting']['actual_votes'] = array(
-      '#type' => 'markup',
-      '#markup' => voting_plus_one_get_vote_count_markup($entity_type, $ewrapper->getIdentifier()),
-    );
+  //if (user_access('vote using plus one voting style') && !voting_plus_one_user_has_voted_in_entity($entity_type, $ewrapper->getIdentifier())) {
+  $form['entity_type'] = array(
+    '#type' => 'value',
+    '#value' => $entity_type,
+  );
+  $form['entity'] = array(
+    '#type' => 'value',
+    '#value' => $ewrapper,
+  );
+  $form['field'] = array(
+    '#type' => 'value',
+    '#value' => $field,
+  );
+  $form['voting'] = array(
+    '#type' => 'container',
+    '#prefix' => '<div class="voting-plusone">',
+    '#suffix' => '</div>',
+  );
+  $form['voting']['actual_votes'] = array(
+    '#type' => 'markup',
+    '#markup' => voting_plus_one_get_vote_count_markup($entity_type, $ewrapper->getIdentifier()),
+  );
+  $form['voting']['vote'] = array(
+    '#type' => 'submit',
+    '#value' => variable_get('voting_plus_one_vote_text', t('Vote') . ' >'),
+    '#ajax' => array(
+      'callback' => 'voting_plus_one_applied_vote',
+      'wrapper' => 'voting-plus-one',
+      'method' => 'replace',
+    ),
+    '#submit' => array('voting_plus_one_get_voting_form_submit'),
+    '#prefix' => '<div class="voting-plusone-button">',
+    '#suffix' => '</div>',
+  );
+  //}
+  //elseif (voting_plus_one_user_has_voted_in_entity($entity_type, $ewrapper->getIdentifier())) {
+  if (voting_plus_one_user_has_voted_in_entity($entity_type, $ewrapper->getIdentifier())) {
     $form['voting']['vote'] = array(
-      '#type' => 'submit',
-      '#value' => variable_get('voting_plus_one_vote_text', t('Vote proposal')),
-      '#ajax' => array(
-        'callback' => 'voting_plus_one_applied_vote',
-        'wrapper' => 'voting-plus-one',
-        'method' => 'replace',
-      ),
-      '#submit' => array('voting_plus_one_get_voting_form_submit'),
-    );
-  }
-  elseif (voting_plus_one_user_has_voted_in_entity($entity_type, $ewrapper->getIdentifier())) {
-    $form['actual_votes'] = array(
       '#type' => 'markup',
       '#markup' => voting_plus_one_get_vote_count_markup($entity_type, $ewrapper->getIdentifier()),
     );
   }
-  else {
-    $form['not_allowed'] = array(
+  else if (!user_access('vote using plus one voting style')) {
+    $form['voting']['vote'] = array(
       '#type' => 'markup',
-      '#markup' => variable_get('voting_plus_one_not_allowed_markup', t('You are not allowed to vote')),
+      '#markup' => '<a href="#">' . variable_get('voting_plus_one_not_allowed_markup', t('Login to vote')) . ' &gt;</a>',
+      '#prefix' => '<div class="voting-plusone-button">',
+      '#suffix' => '</div>',
     );
   }
   return $form;
@@ -173,7 +178,7 @@ function voting_plus_one_get_vote_count_markup($entity_type, $entity_id) {
   );
   $votes = votingapi_select_votes($criteria);
   $count = count($votes);
-  $markup = '<div class="voting-plusone-count"><span class="quantity">' . $count . '</span><span>' . format_plural($count, 'Vote', 'Votes', array(), array('context' => 'voting-singular-plural')) . '</span></div>';
+  $markup = '<div class="voting-plusone-count"><span class="voting-plusone-count-count">' . $count . '</span> <span class="voting-plusone-count-legend">' . format_plural($count, 'Vote', 'Votes', array(), array('context' => 'voting-singular-plural')) . '</span></div>';
   return $markup;
 }
 
