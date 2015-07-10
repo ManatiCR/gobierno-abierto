@@ -264,3 +264,10 @@ function manati_deploy_update_7020() {
 function manati_deploy_update_7021() {
   module_enable(array('smart_trim'));
 }
+
+/**
+ * Enable voting_plus_one module
+ */
+function manati_deploy_update_7022() {
+  module_enable(array('voting_plus_one'));
+}
