@@ -3,13 +3,15 @@
 //
 
 .view-consultas-page {
-  @include outer-container;
-  .views-row {
-    margin-bottom: 2em;
+  .views-grid-row {
+    margin-bottom: 5em;
+    @include outer-container;
+  }
+  .views-grid-column {
     @include media($mobile) {
       @include span-columns(6);
     }
-    &:nth-child(2n) {
+    &:last-child {
       @include media($mobile) {
         @include shift(1);
       }
