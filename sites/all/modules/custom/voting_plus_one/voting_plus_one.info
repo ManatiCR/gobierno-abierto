@@ -1,4 +1,5 @@
 name = Voting Plus One
 description = Provides a plus one style voting system.
 dependencies[] = votingapi
+dependencies[] = entity
 core = 7.x
