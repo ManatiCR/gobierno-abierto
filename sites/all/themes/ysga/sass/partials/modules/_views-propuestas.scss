@@ -28,7 +28,7 @@
     @include font-size(14);
     margin-bottom: 0.5em;
   }
-  .propuesta-body p {
+  .propuesta-body {
     @include font-size(12);
   }
 }
