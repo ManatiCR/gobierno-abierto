@@ -8,4 +8,10 @@
     @include font-size(11);
     margin-bottom: 1em;
   }
+  .pane-node-field-noticia-adjuntos {
+    margin: 2em 0;
+  }
+  .file {
+    @include font-size(14);
+  }
 }

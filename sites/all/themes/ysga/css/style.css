@@ -562,6 +562,11 @@ th, td {
   font-size: 11px;
   font-size: 1.1rem;
   margin-bottom: 1em; }
+.page-node.node-type-noticia .pane-node-field-noticia-adjuntos {
+  margin: 2em 0; }
+.page-node.node-type-noticia .file {
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 .page-node.node-type-consulta .pane-node-title {
   display: inline-block;
