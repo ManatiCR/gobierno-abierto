@@ -54,6 +54,60 @@ function ysga_ct_noticia_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-noticia-field_noticia_adjuntos'
+  $field_instances['node-noticia-field_noticia_adjuntos'] = array(
+    'bundle' => 'noticia',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_noticia_adjuntos',
+    'label' => 'Archivos adjuntos',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'file_directory' => 'adjuntos',
+      'file_extensions' => 'pdf doc docx xls xlsx ppt pptx',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Archivos adjuntos',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-noticia-field_noticia_categoria'
   $field_instances['node-noticia-field_noticia_categoria'] = array(
     'bundle' => 'noticia',
@@ -169,6 +223,7 @@ function ysga_ct_noticia_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Archivos adjuntos');
   t('Body');
   t('Categoría');
   t('Imágenes');
