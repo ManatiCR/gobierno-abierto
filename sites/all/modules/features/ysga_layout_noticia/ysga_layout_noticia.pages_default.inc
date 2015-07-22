@@ -144,6 +144,36 @@ function ysga_layout_noticia_default_page_manager_handlers() {
     $display->content['new-58d4fd26-2799-479c-a9d1-49c96ef7d4b6'] = $pane;
     $display->panels['content'][2] = 'new-58d4fd26-2799-479c-a9d1-49c96ef7d4b6';
     $pane = new stdClass();
+    $pane->pid = 'new-85fd9a44-d787-4e7b-8199-ccd84d7f1163';
+    $pane->panel = 'content';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_noticia_adjuntos';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'title',
+      'formatter' => 'file_default',
+      'delta_limit' => '0',
+      'delta_offset' => '0',
+      'delta_reversed' => 0,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '85fd9a44-d787-4e7b-8199-ccd84d7f1163';
+    $display->content['new-85fd9a44-d787-4e7b-8199-ccd84d7f1163'] = $pane;
+    $display->panels['content'][3] = 'new-85fd9a44-d787-4e7b-8199-ccd84d7f1163';
+    $pane = new stdClass();
     $pane->pid = 'new-712ad38e-c115-4d75-8f34-af36a9d5bee6';
     $pane->panel = 'content';
     $pane->type = 'block';
@@ -161,11 +191,11 @@ function ysga_layout_noticia_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = '712ad38e-c115-4d75-8f34-af36a9d5bee6';
     $display->content['new-712ad38e-c115-4d75-8f34-af36a9d5bee6'] = $pane;
-    $display->panels['content'][3] = 'new-712ad38e-c115-4d75-8f34-af36a9d5bee6';
+    $display->panels['content'][4] = 'new-712ad38e-c115-4d75-8f34-af36a9d5bee6';
     $pane = new stdClass();
     $pane->pid = 'new-d9a1d355-e3fd-43f5-b81d-12638ba12814';
     $pane->panel = 'sidebar';
