@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the YSGA Resultados de la consulta feature.
+ */
+
+include_once 'ysga_context_resultados.features.inc';
