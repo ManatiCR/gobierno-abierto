@@ -271,3 +271,10 @@ function manati_deploy_update_7021() {
 function manati_deploy_update_7022() {
   module_enable(array('voting_plus_one'));
 }
+
+/**
+ * Enable voting_plus_one module
+ */
+function manati_deploy_update_7023() {
+  module_enable(array('ysga_context_resultados'));
+}
