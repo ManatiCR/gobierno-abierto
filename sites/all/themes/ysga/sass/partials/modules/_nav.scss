@@ -40,3 +40,43 @@
     }
   }
 }
+
+// Submenú "Resultados"
+
+.block-sidebar--menu-resultados {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    font-weight: 700;
+    margin: 0 0 0.8em 0;
+    padding: 0 0 0.8em 0;
+    border-bottom: 1px solid $background-color;
+  }
+  a {
+    color: $text-color;
+    &.active {
+      color: $highlight1-color;
+    }
+  }
+  .nolink {
+    display: block;
+    margin: 0 0 0.8em 0;
+    color: $subtitle-color;
+  }
+  li li {
+    border-bottom: none;
+    padding: 0;
+    a, span {
+      @include font-size(12);
+    }
+  }
+  li li li {
+    margin: 0 0 0.5em 0.8em;
+  }
+  li.last {
+    margin-bottom: 0;
+  }
+}

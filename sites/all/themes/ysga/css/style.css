@@ -352,6 +352,34 @@ th, td {
   .block-sidebar--menu-acerca a.active {
     color: #20ceac; }
 
+.block-sidebar--menu-resultados ul {
+  margin: 0;
+  padding: 0; }
+.block-sidebar--menu-resultados li {
+  list-style-type: none;
+  font-weight: 700;
+  margin: 0 0 0.8em 0;
+  padding: 0 0 0.8em 0;
+  border-bottom: 1px solid #ddd; }
+.block-sidebar--menu-resultados a {
+  color: #5d5d5d; }
+  .block-sidebar--menu-resultados a.active {
+    color: #20ceac; }
+.block-sidebar--menu-resultados .nolink {
+  display: block;
+  margin: 0 0 0.8em 0;
+  color: #2f2935; }
+.block-sidebar--menu-resultados li li {
+  border-bottom: none;
+  padding: 0; }
+  .block-sidebar--menu-resultados li li a, .block-sidebar--menu-resultados li li span {
+    font-size: 12px;
+    font-size: 1.2rem; }
+.block-sidebar--menu-resultados li li li {
+  margin: 0 0 0.5em 0.8em; }
+.block-sidebar--menu-resultados li.last {
+  margin-bottom: 0; }
+
 .nav-main {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
