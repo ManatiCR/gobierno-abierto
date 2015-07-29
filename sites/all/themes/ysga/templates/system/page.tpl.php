@@ -119,6 +119,9 @@
       <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
       </div>
     </nav>
+    <div class="logo-hivos">
+      Patrocinado por <img src="<?php print $base_path . $directory . '/img/logo-hivos.png'?>">
+    </div>
     <?php print render($page['footer']); ?>
   </div>
 </footer>
