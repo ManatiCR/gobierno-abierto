@@ -22,6 +22,7 @@ features[field_instance][] = node-noticia-body
 features[field_instance][] = node-noticia-field_noticia_adjuntos
 features[field_instance][] = node-noticia-field_noticia_categoria
 features[field_instance][] = node-noticia-field_noticia_imagenes
+features[field_instance][] = node-noticia-field_plan_de_accion
 features[node][] = noticia
 features[variable][] = field_bundle_settings_node__noticia
 features[variable][] = language_content_type_noticia

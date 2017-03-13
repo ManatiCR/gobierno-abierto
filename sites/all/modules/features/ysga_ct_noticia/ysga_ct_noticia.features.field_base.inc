@@ -10,7 +10,7 @@
 function ysga_ct_noticia_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_noticia_adjuntos'
+  // Exported field_base: 'field_noticia_adjuntos'.
   $field_bases['field_noticia_adjuntos'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -33,7 +33,7 @@ function ysga_ct_noticia_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_noticia_categoria'
+  // Exported field_base: 'field_noticia_categoria'.
   $field_bases['field_noticia_categoria'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -59,7 +59,7 @@ function ysga_ct_noticia_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_noticia_imagenes'
+  // Exported field_base: 'field_noticia_imagenes'.
   $field_bases['field_noticia_imagenes'] = array(
     'active' => 1,
     'cardinality' => -1,

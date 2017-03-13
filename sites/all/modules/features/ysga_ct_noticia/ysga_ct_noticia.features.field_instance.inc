@@ -10,7 +10,7 @@
 function ysga_ct_noticia_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-noticia-body'
+  // Exported field_instance: 'node-noticia-body'.
   $field_instances['node-noticia-body'] = array(
     'bundle' => 'noticia',
     'default_value' => NULL,
@@ -50,11 +50,11 @@ function ysga_ct_noticia_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-noticia-field_noticia_adjuntos'
+  // Exported field_instance: 'node-noticia-field_noticia_adjuntos'.
   $field_instances['node-noticia-field_noticia_adjuntos'] = array(
     'bundle' => 'noticia',
     'deleted' => 0,
@@ -104,11 +104,11 @@ function ysga_ct_noticia_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-noticia-field_noticia_categoria'
+  // Exported field_instance: 'node-noticia-field_noticia_categoria'.
   $field_instances['node-noticia-field_noticia_categoria'] = array(
     'bundle' => 'noticia',
     'default_value' => NULL,
@@ -157,7 +157,7 @@ function ysga_ct_noticia_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-noticia-field_noticia_imagenes'
+  // Exported field_instance: 'node-noticia-field_noticia_imagenes'.
   $field_instances['node-noticia-field_noticia_imagenes'] = array(
     'bundle' => 'noticia',
     'deleted' => 0,
@@ -217,7 +217,56 @@ function ysga_ct_noticia_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 4,
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-noticia-field_plan_de_accion'.
+  $field_instances['node-noticia-field_plan_de_accion'] = array(
+    'bundle' => 'noticia',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_plan_de_accion',
+    'label' => 'Plan de acción',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Plan de acción',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
     ),
   );
 
@@ -227,6 +276,7 @@ function ysga_ct_noticia_field_default_field_instances() {
   t('Body');
   t('Categoría');
   t('Imágenes');
+  t('Plan de acción');
 
   return $field_instances;
 }
