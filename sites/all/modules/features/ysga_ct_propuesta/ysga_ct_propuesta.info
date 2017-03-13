@@ -19,6 +19,7 @@ features[field_base][] = field_propuesta_categoria
 features[field_base][] = field_propuesta_consulta
 features[field_base][] = field_votes
 features[field_instance][] = node-propuesta-body
+features[field_instance][] = node-propuesta-field_plan_de_accion
 features[field_instance][] = node-propuesta-field_propuesta_categoria
 features[field_instance][] = node-propuesta-field_propuesta_consulta
 features[field_instance][] = node-propuesta-field_votes

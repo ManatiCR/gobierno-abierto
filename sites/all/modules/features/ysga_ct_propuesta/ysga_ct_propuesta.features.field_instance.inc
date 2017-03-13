@@ -10,7 +10,7 @@
 function ysga_ct_propuesta_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-propuesta-body'
+  // Exported field_instance: 'node-propuesta-body'.
   $field_instances['node-propuesta-body'] = array(
     'bundle' => 'propuesta',
     'default_value' => NULL,
@@ -50,11 +50,59 @@ function ysga_ct_propuesta_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-propuesta-field_propuesta_categoria'
+  // Exported field_instance: 'node-propuesta-field_plan_de_accion'.
+  $field_instances['node-propuesta-field_plan_de_accion'] = array(
+    'bundle' => 'propuesta',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_plan_de_accion',
+    'label' => 'Plan de acción',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Plan de acción',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-propuesta-field_propuesta_categoria'.
   $field_instances['node-propuesta-field_propuesta_categoria'] = array(
     'bundle' => 'propuesta',
     'default_value' => NULL,
@@ -99,11 +147,11 @@ function ysga_ct_propuesta_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 33,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-propuesta-field_propuesta_consulta'
+  // Exported field_instance: 'node-propuesta-field_propuesta_consulta'.
   $field_instances['node-propuesta-field_propuesta_consulta'] = array(
     'bundle' => 'propuesta',
     'default_value' => NULL,
@@ -150,11 +198,11 @@ function ysga_ct_propuesta_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-propuesta-field_votes'
+  // Exported field_instance: 'node-propuesta-field_votes'.
   $field_instances['node-propuesta-field_votes'] = array(
     'bundle' => 'propuesta',
     'default_value' => array(
@@ -203,7 +251,7 @@ function ysga_ct_propuesta_field_default_field_instances() {
       'module' => 'voting_plus_one',
       'settings' => array(),
       'type' => 'voting_plus_one',
-      'weight' => 34,
+      'weight' => 6,
     ),
   );
 
@@ -212,6 +260,7 @@ function ysga_ct_propuesta_field_default_field_instances() {
   t('Body');
   t('Categoría');
   t('Consulta');
+  t('Plan de acción');
   t('Votes');
 
   return $field_instances;
