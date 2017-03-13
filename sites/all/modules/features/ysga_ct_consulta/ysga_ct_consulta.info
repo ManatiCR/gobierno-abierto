@@ -22,6 +22,7 @@ features[field_instance][] = node-consulta-body
 features[field_instance][] = node-consulta-field_consulta_fecha
 features[field_instance][] = node-consulta-field_consulta_imagenes
 features[field_instance][] = node-consulta-field_consulta_region
+features[field_instance][] = node-consulta-field_plan_de_accion
 features[node][] = consulta
 features[variable][] = field_bundle_settings_node__consulta
 features[variable][] = language_content_type_consulta

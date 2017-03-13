@@ -10,7 +10,7 @@
 function ysga_ct_consulta_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-consulta-body'
+  // Exported field_instance: 'node-consulta-body'.
   $field_instances['node-consulta-body'] = array(
     'bundle' => 'consulta',
     'default_value' => NULL,
@@ -50,11 +50,11 @@ function ysga_ct_consulta_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-consulta-field_consulta_fecha'
+  // Exported field_instance: 'node-consulta-field_consulta_fecha'.
   $field_instances['node-consulta-field_consulta_fecha'] = array(
     'bundle' => 'consulta',
     'deleted' => 0,
@@ -69,6 +69,7 @@ function ysga_ct_consulta_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 1,
@@ -119,7 +120,7 @@ function ysga_ct_consulta_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-consulta-field_consulta_imagenes'
+  // Exported field_instance: 'node-consulta-field_consulta_imagenes'.
   $field_instances['node-consulta-field_consulta_imagenes'] = array(
     'bundle' => 'consulta',
     'deleted' => 0,
@@ -177,11 +178,11 @@ function ysga_ct_consulta_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-consulta-field_consulta_region'
+  // Exported field_instance: 'node-consulta-field_consulta_region'.
   $field_instances['node-consulta-field_consulta_region'] = array(
     'bundle' => 'consulta',
     'default_value' => NULL,
@@ -230,11 +231,61 @@ function ysga_ct_consulta_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-consulta-field_plan_de_accion'.
+  $field_instances['node-consulta-field_plan_de_accion'] = array(
+    'bundle' => 'consulta',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_plan_de_accion',
+    'label' => 'Plan de acción',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Plan de acción',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Fecha de la consulta');
   t('Imágenes');
+  t('Plan de acción');
   t('Región');
 
   return $field_instances;
