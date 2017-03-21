@@ -38,7 +38,7 @@ function ysga_views_consultas_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['style_options']['columns'] = '2';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Campo: Contenido: Imágenes */
+  /* Field: Nodo: Imágenes */
   $handler->display->display_options['fields']['field_consulta_imagenes']['id'] = 'field_consulta_imagenes';
   $handler->display->display_options['fields']['field_consulta_imagenes']['table'] = 'field_data_field_consulta_imagenes';
   $handler->display->display_options['fields']['field_consulta_imagenes']['field'] = 'field_consulta_imagenes';
@@ -51,7 +51,7 @@ function ysga_views_consultas_views_default_views() {
   );
   $handler->display->display_options['fields']['field_consulta_imagenes']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_consulta_imagenes']['delta_offset'] = '0';
-  /* Campo: Contenido: Fecha de la consulta */
+  /* Field: Nodo: Fecha de la consulta */
   $handler->display->display_options['fields']['field_consulta_fecha']['id'] = 'field_consulta_fecha';
   $handler->display->display_options['fields']['field_consulta_fecha']['table'] = 'field_data_field_consulta_fecha';
   $handler->display->display_options['fields']['field_consulta_fecha']['field'] = 'field_consulta_fecha';
@@ -64,7 +64,7 @@ function ysga_views_consultas_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Campo: Contenido: Título */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -76,7 +76,7 @@ function ysga_views_consultas_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Campo: Contenido: Body */
+  /* Field: Nodo: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -84,19 +84,19 @@ function ysga_views_consultas_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Criterio de ordenación: Contenido: Fecha del envío */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Criterios de filtrado: Contenido: Publicado */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterios de filtrado: Contenido: Tipo */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -106,7 +106,61 @@ function ysga_views_consultas_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'consulta' => 'consulta',
+  );
+  /* Filter criterion: Nodo: Plan de acción (field_plan_de_accion) */
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['id'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['table'] = 'field_data_field_plan_de_accion';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['field'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['value'] = array(
+    15 => '15',
+  );
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['vocabulary'] = 'ysga_plan_vocabulary';
   $handler->display->display_options['path'] = 'consultas';
+
+  /* Display: Archivo de consultas */
+  $handler = $view->new_display('page', 'Archivo de consultas', 'page_1');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'consulta' => 'consulta',
+  );
+  /* Filter criterion: Nodo: Plan de acción (field_plan_de_accion) */
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['id'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['table'] = 'field_data_field_plan_de_accion';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['field'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['value'] = array(
+    14 => '14',
+  );
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['vocabulary'] = 'ysga_plan_vocabulary';
+  $handler->display->display_options['path'] = 'archivo/consultas';
   $translatables['ysga_consultas'] = array(
     t('Master'),
     t('Consultas'),
@@ -117,6 +171,8 @@ function ysga_views_consultas_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Page'),
+    t('more'),
+    t('Archivo de consultas'),
   );
   $export['ysga_consultas'] = $view;
 
