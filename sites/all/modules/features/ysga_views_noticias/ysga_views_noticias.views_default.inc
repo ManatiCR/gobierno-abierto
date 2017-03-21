@@ -43,7 +43,7 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'última »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Campo: Contenido: Imágenes */
+  /* Field: Nodo: Imágenes */
   $handler->display->display_options['fields']['field_noticia_imagenes']['id'] = 'field_noticia_imagenes';
   $handler->display->display_options['fields']['field_noticia_imagenes']['table'] = 'field_data_field_noticia_imagenes';
   $handler->display->display_options['fields']['field_noticia_imagenes']['field'] = 'field_noticia_imagenes';
@@ -56,7 +56,7 @@ function ysga_views_noticias_views_default_views() {
   );
   $handler->display->display_options['fields']['field_noticia_imagenes']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_noticia_imagenes']['delta_offset'] = '0';
-  /* Campo: Contenido: Fecha del envío */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -65,7 +65,7 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'ysga_date_only';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* Campo: Contenido: Categoría */
+  /* Field: Nodo: Categoría */
   $handler->display->display_options['fields']['field_noticia_categoria']['id'] = 'field_noticia_categoria';
   $handler->display->display_options['fields']['field_noticia_categoria']['table'] = 'field_data_field_noticia_categoria';
   $handler->display->display_options['fields']['field_noticia_categoria']['field'] = 'field_noticia_categoria';
@@ -77,7 +77,7 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['fields']['field_noticia_categoria']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_noticia_categoria']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_noticia_categoria']['type'] = 'taxonomy_term_reference_plain';
-  /* Campo: Contenido: Título */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -87,7 +87,7 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Campo: Contenido: Body */
+  /* Field: Nodo: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -108,7 +108,7 @@ function ysga_views_noticias_views_default_views() {
     ),
     'trim_preserve_tags' => '',
   );
-  /* Campo: Contenido: Enlace */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -118,19 +118,19 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Leer noticia';
-  /* Criterio de ordenación: Contenido: Fecha del envío */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Criterios de filtrado: Contenido: Publicado */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterios de filtrado: Contenido: Tipo */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -140,6 +140,31 @@ function ysga_views_noticias_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'noticia' => 'noticia',
+  );
+  /* Filter criterion: Nodo: Plan de acción (field_plan_de_accion) */
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['id'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['table'] = 'field_data_field_plan_de_accion';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['field'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['value'] = array(
+    15 => '15',
+  );
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['vocabulary'] = 'ysga_plan_vocabulary';
   $handler->display->display_options['path'] = 'noticias';
 
   /* Display: Block */
@@ -148,7 +173,7 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Imágenes */
+  /* Field: Nodo: Imágenes */
   $handler->display->display_options['fields']['field_noticia_imagenes']['id'] = 'field_noticia_imagenes';
   $handler->display->display_options['fields']['field_noticia_imagenes']['table'] = 'field_data_field_noticia_imagenes';
   $handler->display->display_options['fields']['field_noticia_imagenes']['field'] = 'field_noticia_imagenes';
@@ -161,7 +186,7 @@ function ysga_views_noticias_views_default_views() {
   );
   $handler->display->display_options['fields']['field_noticia_imagenes']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_noticia_imagenes']['delta_offset'] = '0';
-  /* Campo: Contenido: Fecha del envío */
+  /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -170,7 +195,7 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'ysga_date_only';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
-  /* Campo: Contenido: Categoría */
+  /* Field: Nodo: Categoría */
   $handler->display->display_options['fields']['field_noticia_categoria']['id'] = 'field_noticia_categoria';
   $handler->display->display_options['fields']['field_noticia_categoria']['table'] = 'field_data_field_noticia_categoria';
   $handler->display->display_options['fields']['field_noticia_categoria']['field'] = 'field_noticia_categoria';
@@ -182,7 +207,7 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['fields']['field_noticia_categoria']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_noticia_categoria']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_noticia_categoria']['type'] = 'taxonomy_term_reference_plain';
-  /* Campo: Contenido: Título */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -192,7 +217,7 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Campo: Contenido: Body */
+  /* Field: Nodo: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -213,7 +238,7 @@ function ysga_views_noticias_views_default_views() {
     ),
     'trim_preserve_tags' => '',
   );
-  /* Campo: Contenido: Enlace */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -223,6 +248,60 @@ function ysga_views_noticias_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Leer noticia';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'noticia' => 'noticia',
+  );
+  /* Filter criterion: Nodo: Plan de acción (field_plan_de_accion) */
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['id'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['table'] = 'field_data_field_plan_de_accion';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['field'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['value'] = array(
+    15 => '15',
+  );
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['vocabulary'] = 'ysga_plan_vocabulary';
+
+  /* Display: Archivo de noticias */
+  $handler = $view->new_display('page', 'Archivo de noticias', 'page_1');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'noticia' => 'noticia',
+  );
+  /* Filter criterion: Nodo: Plan de acción (field_plan_de_accion) */
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['id'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['table'] = 'field_data_field_plan_de_accion';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['field'] = 'field_plan_de_accion_tid';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['value'] = array(
+    14 => '14',
+  );
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_plan_de_accion_tid']['vocabulary'] = 'ysga_plan_vocabulary';
+  $handler->display->display_options['path'] = 'archivo/noticias';
   $translatables['ysga_noticias'] = array(
     t('Master'),
     t('Noticias'),
@@ -242,7 +321,9 @@ function ysga_views_noticias_views_default_views() {
     t('<span class="noticia-info-fecha">[created]</span> <span class="noticia-info-categoria">[field_noticia_categoria]</span>'),
     t('Leer noticia'),
     t('Page'),
+    t('more'),
     t('Block'),
+    t('Archivo de noticias'),
   );
   $export['ysga_noticias'] = $view;
 
