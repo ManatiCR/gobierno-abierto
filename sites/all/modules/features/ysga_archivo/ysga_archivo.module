@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Archivo Segundo Plan feature.
+ */
+
+include_once 'ysga_archivo.features.inc';
