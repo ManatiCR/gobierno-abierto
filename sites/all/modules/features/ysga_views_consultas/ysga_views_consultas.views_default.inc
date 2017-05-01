@@ -22,7 +22,7 @@ function ysga_views_consultas_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Consultas';
+  $handler->display->display_options['title'] = 'Talleres';
   $handler->display->display_options['css_class'] = 'view-consultas-page';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'más';
@@ -106,6 +106,14 @@ function ysga_views_consultas_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Unfiltered text */
+  $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['label'] = 'No se han agregado talleres';
+  $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area_text_custom']['content'] = 'Aún no se ha agregado ningún taller.';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -131,10 +139,12 @@ function ysga_views_consultas_views_default_views() {
   );
   $handler->display->display_options['filters']['field_plan_de_accion_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_plan_de_accion_tid']['vocabulary'] = 'ysga_plan_vocabulary';
-  $handler->display->display_options['path'] = 'consultas';
+  $handler->display->display_options['path'] = 'talleres';
 
   /* Display: Archivo de consultas */
   $handler = $view->new_display('page', 'Archivo de consultas', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Consultas';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -163,7 +173,7 @@ function ysga_views_consultas_views_default_views() {
   $handler->display->display_options['path'] = 'archivo/consultas';
   $translatables['ysga_consultas'] = array(
     t('Master'),
-    t('Consultas'),
+    t('Talleres'),
     t('más'),
     t('Aplicar'),
     t('Reiniciar'),
@@ -172,7 +182,10 @@ function ysga_views_consultas_views_default_views() {
     t('Desc'),
     t('Page'),
     t('more'),
+    t('No se han agregado talleres'),
+    t('Aún no se ha agregado ningún taller.'),
     t('Archivo de consultas'),
+    t('Consultas'),
   );
   $export['ysga_consultas'] = $view;
 

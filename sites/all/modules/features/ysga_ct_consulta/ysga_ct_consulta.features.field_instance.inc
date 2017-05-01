@@ -83,7 +83,7 @@ function ysga_ct_consulta_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_consulta_fecha',
-    'label' => 'Fecha de la consulta',
+    'label' => 'Fecha del taller',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -112,6 +112,7 @@ function ysga_ct_consulta_field_default_field_instances() {
         'input_format' => 'm/d/Y - H:i:s',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'no_fieldset' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
@@ -283,7 +284,7 @@ function ysga_ct_consulta_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Fecha de la consulta');
+  t('Fecha del taller');
   t('Imágenes');
   t('Plan de acción');
   t('Región');

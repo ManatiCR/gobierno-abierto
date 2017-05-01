@@ -19,9 +19,9 @@ function ysga_ct_consulta_ctools_plugin_api($module = NULL, $api = NULL) {
 function ysga_ct_consulta_node_info() {
   $items = array(
     'consulta' => array(
-      'name' => t('Consulta'),
+      'name' => t('Taller'),
       'base' => 'node_content',
-      'description' => t('Consulta realizada en una región del país.'),
+      'description' => t('Taller realizada en una región del país.'),
       'has_title' => '1',
       'title_label' => t('Título'),
       'help' => '',
