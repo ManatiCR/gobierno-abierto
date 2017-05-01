@@ -246,22 +246,29 @@ img, iframe {
     clear: both;
     content: "";
     display: table; }
+  .page-inicio .panel-one-two-col .panel-top .panel-pane {
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .page-inicio .panel-one-two-col .panel-top .panel-pane {
+        margin-bottom: 0; } }
 
-.block-consultas-inicio {
-  float: left;
-  display: block;
-  margin-right: 2.17235%;
-  width: 29.26529%; }
-  .block-consultas-inicio:last-child {
-    margin-right: 0; }
+@media screen and (min-width: 768px) {
+  .block-consultas-inicio {
+    float: left;
+    display: block;
+    margin-right: 2.17235%;
+    width: 29.26529%; }
+    .block-consultas-inicio:last-child {
+      margin-right: 0; } }
 
-.block-propuestas-inicio {
-  float: left;
-  display: block;
-  margin-right: 2.17235%;
-  width: 68.56235%; }
-  .block-propuestas-inicio:last-child {
-    margin-right: 0; }
+@media screen and (min-width: 768px) {
+  .block-propuestas-inicio {
+    float: left;
+    display: block;
+    margin-right: 2.17235%;
+    width: 68.56235%; }
+    .block-propuestas-inicio:last-child {
+      margin-right: 0; } }
 
 .header-content {
   -webkit-box-align: start;
