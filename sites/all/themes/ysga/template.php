@@ -13,10 +13,6 @@ function ysga_preprocess_page(&$variables) {
   if (isset($variables['node']) && $variables['node']->type == 'accese_aboutus') {
     $variables['title'] = '';
   }
-
-  // Livereload - Disable this on production
-  drupal_add_js('//localhost:35729/livereload.js', array('type' => 'external', 'scope' => 'footer'));
-
 }
 
 /**
