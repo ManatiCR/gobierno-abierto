@@ -25,6 +25,8 @@
       </a>
     <?php endif; ?>
 
+    <img src="<?php print $base_path . $directory . '/img/header-tercer-plan-web.jpg' ?>" class="header-banner" alt="Estamos construyendo el III Plan de Acción de la Alianza para un Gobierno Abierto" />
+
     <?php if ($site_name || $site_slogan): ?>
 
         <?php if ($site_name): ?>

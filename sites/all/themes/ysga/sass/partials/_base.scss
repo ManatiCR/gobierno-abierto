@@ -77,6 +77,12 @@ th, td {
   padding: 0.5em;
 }
 
+// Responsive images and iframes
+img, iframe {
+  height: auto;
+  max-width: 100%;
+}
+
 // Forms
 
 
