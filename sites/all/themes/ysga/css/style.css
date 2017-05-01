@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Dosis:700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,700italic,900italic);
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
 /*
  * Estilos para sitio web YSGA
  * Desarrollado por Estudio Manatí (http://estudiomanati.com)
  *
  */
+@import url(http://fonts.googleapis.com/css?family=Dosis:700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
 html {
   box-sizing: border-box; }
 
@@ -41,7 +41,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #5d5d5d; }
 
 p, li {
@@ -191,8 +191,8 @@ th, td {
   .one-sidebar .main {
     float: left;
     display: block;
-    margin-right: 2.1723540489%;
-    width: 52.8435289005%; }
+    margin-right: 2.17235%;
+    width: 52.84353%; }
     .one-sidebar .main:last-child {
       margin-right: 0; } }
 
@@ -200,9 +200,9 @@ th, td {
   #sidebar-first {
     float: left;
     display: block;
-    margin-right: 2.1723540489%;
-    width: 37.1247052007%;
-    margin-left: 7.8594118499%; }
+    margin-right: 2.17235%;
+    width: 37.12471%;
+    margin-left: 7.85941%; }
     #sidebar-first:last-child {
       margin-right: 0; } }
 
@@ -223,17 +223,17 @@ th, td {
     .panel-one-two-col .panel-content, .panel-two-col .panel-content {
       float: left;
       display: block;
-      margin-right: 2.1723540489%;
-      width: 52.8435289005%; }
+      margin-right: 2.17235%;
+      width: 52.84353%; }
       .panel-one-two-col .panel-content:last-child, .panel-two-col .panel-content:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 480px) {
     .panel-one-two-col .panel-sidebar, .panel-two-col .panel-sidebar {
       float: left;
       display: block;
-      margin-right: 2.1723540489%;
-      width: 37.1247052007%;
-      margin-left: 7.8594118499%; }
+      margin-right: 2.17235%;
+      width: 37.12471%;
+      margin-left: 7.85941%; }
       .panel-one-two-col .panel-sidebar:last-child, .panel-two-col .panel-sidebar:last-child {
         margin-right: 0; } }
 
@@ -249,16 +249,16 @@ th, td {
 .block-consultas-inicio {
   float: left;
   display: block;
-  margin-right: 2.1723540489%;
-  width: 29.2652933508%; }
+  margin-right: 2.17235%;
+  width: 29.26529%; }
   .block-consultas-inicio:last-child {
     margin-right: 0; }
 
 .block-propuestas-inicio {
   float: left;
   display: block;
-  margin-right: 2.1723540489%;
-  width: 68.5623526003%; }
+  margin-right: 2.17235%;
+  width: 68.56235%; }
   .block-propuestas-inicio:last-child {
     margin-right: 0; }
 
@@ -330,6 +330,7 @@ th, td {
 .nav .content ul {
   margin: 0;
   padding: 0; }
+
 .nav .content li {
   list-style-type: none;
   display: inline-block;
@@ -343,10 +344,12 @@ th, td {
 .block-sidebar--menu-acerca ul {
   margin: 0;
   padding: 0; }
+
 .block-sidebar--menu-acerca li {
   list-style-type: none;
   font-weight: 700;
   margin: 0 0 0.5em 0; }
+
 .block-sidebar--menu-acerca a {
   color: #2f2935; }
   .block-sidebar--menu-acerca a.active {
@@ -355,28 +358,34 @@ th, td {
 .block-sidebar--menu-resultados ul {
   margin: 0;
   padding: 0; }
+
 .block-sidebar--menu-resultados li {
   list-style-type: none;
   font-weight: 700;
   margin: 0 0 0.8em 0;
   padding: 0 0 0.8em 0;
   border-bottom: 1px solid #ddd; }
+
 .block-sidebar--menu-resultados a {
   color: #5d5d5d; }
   .block-sidebar--menu-resultados a.active {
     color: #20ceac; }
+
 .block-sidebar--menu-resultados .nolink {
   display: block;
   margin: 0 0 0.8em 0;
   color: #2f2935; }
+
 .block-sidebar--menu-resultados li li {
   border-bottom: none;
   padding: 0; }
   .block-sidebar--menu-resultados li li a, .block-sidebar--menu-resultados li li span {
     font-size: 12px;
     font-size: 1.2rem; }
+
 .block-sidebar--menu-resultados li li li {
   margin: 0 0 0.5em 0.8em; }
+
 .block-sidebar--menu-resultados li.last {
   margin-bottom: 0; }
 
@@ -445,6 +454,7 @@ th, td {
   margin-left: 20px; }
   .nav-social .content li:first-child {
     margin-left: 0; }
+
 .nav-social .content a {
   display: block;
   background-image: url(../img/sprite.svg); }
@@ -533,34 +543,39 @@ th, td {
 
 .page-contact .contact-form {
   margin-top: 40px; }
+
 .page-contact label {
   color: #2f2935;
   font-size: 12px;
   font-size: 1.2rem; }
+
 .page-contact input[type="text"], .page-contact textarea {
   border: 1px solid #ddd;
   border-radius: 3px;
   font-size: 12px;
   font-size: 1.2rem;
   padding: 3px 5px; }
+
 .page-contact .form-type-textfield, .page-contact .form-type-textarea {
   overflow: hidden; }
   .page-contact .form-type-textfield label, .page-contact .form-type-textarea label {
     float: left;
     display: block;
-    margin-right: 3.5786636068%;
-    width: 22.3160022949%; }
+    margin-right: 3.57866%;
+    width: 22.316%; }
     .page-contact .form-type-textfield label:last-child, .page-contact .form-type-textarea label:last-child {
       margin-right: 0; }
   .page-contact .form-type-textfield input, .page-contact .form-type-textfield textarea, .page-contact .form-type-textarea input, .page-contact .form-type-textarea textarea {
     float: left;
     display: block;
-    margin-right: 3.5786636068%;
-    width: 74.1053340983%; }
+    margin-right: 3.57866%;
+    width: 74.10533%; }
     .page-contact .form-type-textfield input:last-child, .page-contact .form-type-textfield textarea:last-child, .page-contact .form-type-textarea input:last-child, .page-contact .form-type-textarea textarea:last-child {
       margin-right: 0; }
+
 .page-contact .form-actions {
   margin-top: 30px; }
+
 .page-contact .form-submit {
   border: none;
   border-radius: 3px;
@@ -578,24 +593,29 @@ th, td {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: 0; }
+
 .view-ysga-noticias .views-field-field-noticia-imagenes {
   float: left;
   margin: 0 0.8em 0.8em 0; }
   .view-ysga-noticias .views-field-field-noticia-imagenes img {
     border-radius: 5px; }
+
 .view-ysga-noticias .views-field-body {
   clear: both;
   font-size: 12px;
   font-size: 1.2rem;
   margin: 0.8em 0; }
+
 .view-ysga-noticias .noticia-info-fecha {
   color: #20ceac;
   margin-right: 10px; }
+
 .view-ysga-noticias .noticia-info-categoria {
   color: #8e8a6b;
   background-color: #e2dcc7;
   padding: 0 8px;
   text-transform: uppercase; }
+
 .view-ysga-noticias h3 {
   margin: 5px 0 0 0;
   font-size: 14px;
@@ -611,8 +631,10 @@ th, td {
   font-size: 11px;
   font-size: 1.1rem;
   margin-bottom: 1em; }
+
 .page-node.node-type-noticia .pane-node-field-noticia-adjuntos {
   margin: 2em 0; }
+
 .page-node.node-type-noticia .file {
   font-size: 14px;
   font-size: 1.4rem; }
@@ -621,6 +643,7 @@ th, td {
   display: inline-block;
   position: relative;
   bottom: -20px; }
+
 .page-node.node-type-consulta .title {
   background-color: #f7931e;
   color: #fff;
@@ -629,6 +652,7 @@ th, td {
   font-size: 20px;
   font-size: 2rem;
   display: inline-block; }
+
 .page-node.node-type-consulta .pane-node-field-consulta-fecha {
   display: inline-block;
   color: #20ceac;
@@ -702,6 +726,7 @@ th, td {
   font-weight: 900;
   font-size: 14px;
   font-size: 1.4rem; }
+
 .voting-plusone-button a:hover {
   text-decoration: none; }
 
@@ -714,28 +739,34 @@ th, td {
     clear: both;
     content: "";
     display: table; }
+
 @media screen and (min-width: 480px) {
   .view-consultas-page .views-grid-column {
     float: left;
     display: block;
-    margin-right: 2.1723540489%;
-    width: 44.9841170506%; }
+    margin-right: 2.17235%;
+    width: 44.98412%; }
     .view-consultas-page .views-grid-column:last-child {
       margin-right: 0; } }
+
 @media screen and (min-width: 480px) {
   .view-consultas-page .views-grid-column:last-child {
-    margin-left: 7.8594118499%; } }
+    margin-left: 7.85941%; } }
+
 .view-consultas-page .views-field-field-consulta-imagenes {
   float: left;
   margin-right: 25px; }
   .view-consultas-page .views-field-field-consulta-imagenes img {
     border-radius: 5px; }
+
 .view-consultas-page .views-field-field-consulta-fecha {
   color: #20ceac;
   font-size: 11px;
   font-size: 1.1rem; }
+
 .view-consultas-page .views-field-consulta-title {
   margin: 0.5em 0; }
+
 .view-consultas-page .views-field-body p {
   margin: 0;
   font-size: 12px;
@@ -768,17 +799,20 @@ th, td {
 
 .view-propuestas-consulta .view-header {
   margin-bottom: 10px; }
+
 .view-propuestas-consulta .header-propuestas {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
   font-size: 1.2rem; }
+
 .view-propuestas-consulta .view-footer {
   margin-top: 20px; }
   .view-propuestas-consulta .view-footer a {
     font-size: 12px;
     font-size: 1.2rem;
     color: #20ceac; }
+
 .view-propuestas-consulta .views-field-title {
   margin-bottom: 0.3em; }
   .view-propuestas-consulta .views-field-title a {
@@ -786,25 +820,30 @@ th, td {
 
 .propuestas-inicio .pane-title {
   margin-bottom: 1.5em; }
+
 .propuestas-inicio .view-content {
   float: left;
   display: block;
-  margin-right: 4.1109178249%;
-  width: 70.2540234786%; }
+  margin-right: 4.11092%;
+  width: 70.25402%; }
   .propuestas-inicio .view-content:last-child {
     margin-right: 0; }
+
 .propuestas-inicio .view-content > h3 {
   text-transform: uppercase;
   font-size: 14px;
   font-size: 1.4rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.3em; }
+
 .propuestas-inicio .propuestas-inicio-propuesta {
   margin-bottom: 2em; }
+
 .propuestas-inicio .propuestas-inicio-propuesta-title {
   margin-bottom: 0.3em;
   font-size: 13px;
   font-size: 1.3rem; }
+
 .propuestas-inicio .views-field-body {
   font-size: 12px;
   font-size: 1.2rem;
@@ -876,5 +915,3 @@ th, td {
 
 .proponga-cta-formulario {
   margin-left: 1em; }
-
-/*# sourceMappingURL=style.css.map */
