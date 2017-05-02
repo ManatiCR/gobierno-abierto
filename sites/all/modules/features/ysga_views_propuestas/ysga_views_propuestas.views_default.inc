@@ -266,7 +266,7 @@ function ysga_views_propuestas_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Propuestas';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'view-propuestas-page';
+  $handler->display->display_options['css_class'] = 'view-propuestas-page view-propuestas-page-archivo';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = array(
