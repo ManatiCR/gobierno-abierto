@@ -13,7 +13,7 @@ function ysga_preprocess_page(&$variables) {
   if (isset($variables['node']) && $variables['node']->type == 'accese_aboutus') {
     $variables['title'] = '';
   }
-}
+ }
 
 /**
  * Implements hook_preprocess_html().
