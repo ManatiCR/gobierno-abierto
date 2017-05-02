@@ -34,13 +34,15 @@
 }
 
 .one-sidebar .main {
-  @include media($mobile) {
+  @include media($medium) {
     @include span-columns(7);
   }
 }
 
 #sidebar-first {
-  @include media($mobile) {
+  margin-top: 20px;
+  @include media($medium) {
+    margin-top: 0;
     @include span-columns(5);
     @include shift(1);
   }
@@ -58,12 +60,14 @@
     margin-bottom: 40px;
   }
   .panel-content {
-    @include media($mobile) {
+    @include media($medium) {
       @include span-columns(7);
     }
   }
   .panel-sidebar {
-    @include media($mobile) {
+    margin-top: 20px;
+    @include media($medium) {
+      margin-top: 0;
       @include span-columns(5);
       @include shift(1);
     }

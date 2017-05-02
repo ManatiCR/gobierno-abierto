@@ -34,9 +34,6 @@
 }
 
 .view-propuestas-consulta {
-  .pane-title {
-    //margin-bottom: 0;
-  }
   .view-header {
     margin-bottom: 10px;
   }
@@ -66,7 +63,7 @@
     margin-bottom: 1.5em;
   }
   .view-content {
-    @include span-columns(5 of 7);
+    width: 70%;
   }
   .view-content > h3 {
     text-transform: uppercase;

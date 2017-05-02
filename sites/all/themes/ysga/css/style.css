@@ -188,7 +188,7 @@ img, iframe {
 .no-sidebars .main {
   width: 100%; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .one-sidebar .main {
     float: left;
     display: block;
@@ -197,15 +197,18 @@ img, iframe {
     .one-sidebar .main:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 480px) {
-  #sidebar-first {
-    float: left;
-    display: block;
-    margin-right: 2.17235%;
-    width: 37.12471%;
-    margin-left: 7.85941%; }
-    #sidebar-first:last-child {
-      margin-right: 0; } }
+#sidebar-first {
+  margin-top: 20px; }
+  @media screen and (min-width: 768px) {
+    #sidebar-first {
+      margin-top: 0;
+      float: left;
+      display: block;
+      margin-right: 2.17235%;
+      width: 37.12471%;
+      margin-left: 7.85941%; }
+      #sidebar-first:last-child {
+        margin-right: 0; } }
 
 .panel-separator {
   display: none; }
@@ -220,7 +223,7 @@ img, iframe {
     display: table; }
   .panel-one-two-col .panel-top, .panel-two-col .panel-top {
     margin-bottom: 40px; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .panel-one-two-col .panel-content, .panel-two-col .panel-content {
       float: left;
       display: block;
@@ -228,15 +231,18 @@ img, iframe {
       width: 52.84353%; }
       .panel-one-two-col .panel-content:last-child, .panel-two-col .panel-content:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 480px) {
-    .panel-one-two-col .panel-sidebar, .panel-two-col .panel-sidebar {
-      float: left;
-      display: block;
-      margin-right: 2.17235%;
-      width: 37.12471%;
-      margin-left: 7.85941%; }
-      .panel-one-two-col .panel-sidebar:last-child, .panel-two-col .panel-sidebar:last-child {
-        margin-right: 0; } }
+  .panel-one-two-col .panel-sidebar, .panel-two-col .panel-sidebar {
+    margin-top: 20px; }
+    @media screen and (min-width: 768px) {
+      .panel-one-two-col .panel-sidebar, .panel-two-col .panel-sidebar {
+        margin-top: 0;
+        float: left;
+        display: block;
+        margin-right: 2.17235%;
+        width: 37.12471%;
+        margin-left: 7.85941%; }
+        .panel-one-two-col .panel-sidebar:last-child, .panel-two-col .panel-sidebar:last-child {
+          margin-right: 0; } }
 
 .page-inicio .panel-one-two-col .panel-top {
   max-width: 1200px;
@@ -444,8 +450,8 @@ img, iframe {
     display: block;
     padding: 10px;
     font-family: Lato, sans-serif;
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     color: #5d5d5d; }
     .nav-main .content a.active {
       color: #29abe2;
@@ -525,10 +531,16 @@ img, iframe {
   border-radius: 4px; }
   .block-consultas-inicio h2, .block-consultas-inicio p {
     color: #fff; }
+  .block-consultas-inicio h2 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+  .block-consultas-inicio p {
+    font-size: 14px;
+    font-size: 1.4rem; }
   .block-consultas-inicio .button {
     margin-top: 2em;
-    font-size: 12px;
-    font-size: 1.2rem; }
+    font-size: 16px;
+    font-size: 1.6rem; }
     .block-consultas-inicio .button a {
       background-color: transparent;
       border: 1px solid #fff; }
@@ -538,11 +550,16 @@ img, iframe {
   background-color: #e8e8e8;
   border-radius: 4px; }
   .block-propuestas-inicio p {
-    max-width: 400px; }
+    max-width: 400px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .block-propuestas-inicio h2 {
+    font-size: 18px;
+    font-size: 1.8rem; }
   .block-propuestas-inicio .button {
     margin-top: 2em;
-    font-size: 12px;
-    font-size: 1.2rem; }
+    font-size: 16px;
+    font-size: 1.6rem; }
     .block-propuestas-inicio .button a {
       background-color: #2f2935;
       border: 1px solid #2f2935; }
@@ -844,12 +861,7 @@ img, iframe {
   margin-bottom: 1.5em; }
 
 .propuestas-inicio .view-content {
-  float: left;
-  display: block;
-  margin-right: 4.11092%;
-  width: 70.25402%; }
-  .propuestas-inicio .view-content:last-child {
-    margin-right: 0; }
+  width: 70%; }
 
 .propuestas-inicio .view-content > h3 {
   text-transform: uppercase;
