@@ -145,6 +145,8 @@ function ysga_views_consultas_views_default_views() {
   $handler = $view->new_display('page', 'Archivo de consultas', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Consultas';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'view-consultas-page view-consultas-page-archivo';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
