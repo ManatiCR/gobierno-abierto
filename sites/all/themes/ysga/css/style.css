@@ -811,6 +811,16 @@ img, iframe {
   font-size: 12px;
   font-size: 1.2rem; }
 
+.view-consultas-page-archivo .views-grid-row {
+  margin-bottom: 0; }
+
+.view-consultas-page-archivo .views-grid-column {
+  float: none;
+  width: 100%;
+  margin: 0 0 3em 0; }
+  .view-consultas-page-archivo .views-grid-column:last-child {
+    margin-left: 0; }
+
 .view-propuestas-page {
   overflow: hidden; }
   .view-propuestas-page .category-wrapper {

@@ -38,3 +38,17 @@
     }
   }
 }
+
+.view-consultas-page-archivo {
+  .views-grid-row {
+    margin-bottom: 0;
+  }
+  .views-grid-column {
+    float: none;
+    width: 100%;
+    margin: 0 0 3em 0;
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
