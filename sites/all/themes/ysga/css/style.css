@@ -245,36 +245,33 @@ img, iframe {
           margin-right: 0; } }
 
 .page-inicio .panel-one-two-col .panel-top {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .page-inicio .panel-one-two-col .panel-top::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .page-inicio .panel-one-two-col .panel-top .panel-pane {
-    margin-bottom: 10px; }
-    @media screen and (min-width: 768px) {
-      .page-inicio .panel-one-two-col .panel-top .panel-pane {
-        margin-bottom: 0; } }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .page-inicio .panel-one-two-col .panel-top {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
-@media screen and (min-width: 768px) {
-  .block-consultas-inicio {
-    float: left;
-    display: block;
-    margin-right: 2.17235%;
-    width: 29.26529%; }
-    .block-consultas-inicio:last-child {
-      margin-right: 0; } }
+.block-consultas-inicio {
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .block-consultas-inicio {
+      margin-bottom: 0;
+      width: 30%; } }
 
 @media screen and (min-width: 768px) {
   .block-propuestas-inicio {
-    float: left;
-    display: block;
-    margin-right: 2.17235%;
-    width: 68.56235%; }
-    .block-propuestas-inicio:last-child {
-      margin-right: 0; } }
+    width: 67%; } }
 
 .header-content {
   -webkit-box-align: start;
@@ -550,7 +547,6 @@ img, iframe {
   background-color: #e8e8e8;
   border-radius: 4px; }
   .block-propuestas-inicio p {
-    max-width: 400px;
     font-size: 14px;
     font-size: 1.4rem; }
   .block-propuestas-inicio h2 {
@@ -579,6 +575,17 @@ img, iframe {
     .block-proponga .button a {
       border: 1px solid #fff;
       background-color: transparent; }
+
+.inicio-temporal {
+  margin-bottom: 40px; }
+  .inicio-temporal .button--alpha {
+    margin-top: 30px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    @media screen and (min-width: 768px) {
+      .inicio-temporal .button--alpha {
+        font-size: 16px;
+        font-size: 1.6rem; } }
 
 .page-contact .contact-form {
   margin-top: 40px; }
