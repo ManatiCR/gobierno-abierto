@@ -74,7 +74,7 @@ function ysga_inicio_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Propuestas',
+    'title' => '¿Qué es Gobierno Abierto?',
     'visibility' => 0,
   );
 
