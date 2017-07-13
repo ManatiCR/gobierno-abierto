@@ -122,7 +122,7 @@
       </div>
     </nav>
     <div class="logo-hivos">
-      Patrocinado por <img src="<?php print $base_path . $directory . '/img/logo-hivos.png'?>">
+      Desarrollado con apoyo de <img src="<?php print $base_path . $directory . '/img/logo-hivos.png'?>">
     </div>
     <?php print render($page['footer']); ?>
   </div>
